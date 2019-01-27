@@ -22,6 +22,7 @@ A Blue Forest is centered around Blue Team operational security in domain networ
 - Sanboxing Windows Defender Antivirus
 - Learn how to deploy Windows Defender settings, Windows Defender Exploit Guard, attack surface reduction, block at first site, and Application Guard through Group Policy
 - Securing Microsoft Office 365
+- Deploying Windows Firewall Settings through Group Policy
 
 ## What non Microsoft Information can I find in this repository?
 - Setting up PFSense Firewall
