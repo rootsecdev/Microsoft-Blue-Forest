@@ -73,3 +73,38 @@ After the installation has ended and the server boots up you will need give the 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/Windows9.PNG)
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/Windows10.PNG)
+
+## Patching all the things
+
+You will notice we are still in a unconnected and unpatched state on the server. From a secure machine you will need to download security patches from https://catalog.update.microsoft.com
+
+You can download the latest Windows Defender definitions from the following site https://www.microsoft.com/en-us/wdsi/definitions
+
+The following script can be used as a reference for what you need to download. Just type in the KB number (ex. kb4132216) into the search field on the Microsoft catalog site search bar.
+
+If using 2016 use this script:
+
+https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Scripts/Secure2016.bat
+
+If using 2019 use this script:
+
+https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Scripts/Secure2019.bat
+
+I am constantly modifying this script as Microsoft rolls out KB updates. You will also need a program to add the script above and the Microsoft KB's to a CD ISO image. You can use software such as http://www.freeisoburner.com/ 
+
+Once you have everything in your ISO image ready to go you will need to mount the CD image in your hyper-v session by going to into settings on the virtual machine and selecting the CD ISO that you created. From there type in the following:
+
+```
+cd d:\
+Secure(os verion).bat
+```
+Warning: If you are patching Server 2016 for the first time this will end up taking a while (atleast 40 mins). So go fix a sandwhich...coffee...bourbon and watch some netflix.
+
+## Hyper-V Virtual Networking
+There are two path's to take when it comes to Hyper-V networking:
+
+The Easy Path:
+
+The easy path consists of setting up a private hyper-v switch. A few things to note about setting up a private hyper-v switch. 
+ 
+-It's isolated and will never be connected to the internet
