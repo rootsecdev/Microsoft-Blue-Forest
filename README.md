@@ -30,3 +30,10 @@ A Blue Forest is centered around Blue Team operational security in domain networ
 - Learn how to scan your network for vulnerabilities that may exist in your lab environment and remediating those issues
 
 Plus More to be added over time!
+
+## Table of Contents
+1. [Installing Your First Domain Controller](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/FirstDomainControllerInstall.md)
+
+
+
+
