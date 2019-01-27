@@ -119,7 +119,7 @@ Documentation:
 
 **Setting up a private Hyper-V network switch (The Easy Path)** 
 
-Insert Link To Documentation here
+https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/HyperVNetworkingEasy.md
  
  **Setting up a pfsense firewall and multiple Hyper-V Switches(The Hard Path)**
  
