@@ -128,7 +128,7 @@ https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/HyperVNetworking
  ## Completing Domain Controller Install
  If you reached this point you should have the following done
  
- - Server 2016 OS has been patched
+ - Server 2016/2019 OS has been patched
  - Your first server is connected with a hyper-v switch
  
 The first step in completing the domain controller install is to provide a static IP to your network card. In order to do this we first need to obtain the interface index to the nic card on the virtual machine. To do so enter powershell and run the command Get-NetAdapter as shown below
@@ -159,3 +159,22 @@ Get-WindowsFeature AD-Domain-Services | Install-WindowsFeature
 Import-Module ADDSDeployment
 Install-ADDSForest -DomainName “seclab.local”
 ```
+
+These next few screenshots show this process in its entirety.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StaticDCConfig1.PNG)
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StaticDCConfig2.PNG)
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/InstallDC1.PNG)
+
+At this point your Domain Controller Should Reboot. Now for a bit of troubleshooting to verify your new Domain Controller has the proper filewall profile. Log into the domain controller. Verify it has the correct firewall profile. If it says "Public" You will need to set the nic to "not connected" then swap it back. Below illustrates the process of troubleshooting by using the following command in powershell.
+
+```
+Get-NetConnectionProfile
+
+```
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/InstallDC2%20-%20Troubleshooting.PNG)
+
+This should conclude setting up your first server in your lab as a domain controller.
