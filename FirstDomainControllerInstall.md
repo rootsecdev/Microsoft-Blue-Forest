@@ -103,8 +103,32 @@ Warning: If you are patching Server 2016 for the first time this will end up tak
 ## Hyper-V Virtual Networking
 There are two path's to take when it comes to Hyper-V networking:
 
-The Easy Path:
+**The Easy Path:**
 
 The easy path consists of setting up a private hyper-v switch. A few things to note about setting up a private hyper-v switch. 
  
 -It's isolated and will never be connected to the internet
+
+-Low technical knowledge needed to create
+
+**The Hard Path:**
+
+The hard path consists of of setting up multiple hyper-v switches and setting up a pfsense firewall. This method provides more benefits in terms of building your lab with internet access and segmenting your domain network from your home network. 
+
+Documentation:
+
+**Setting up a private Hyper-V network switch (The Easy Path)** 
+
+Insert Link To Documentation here
+ 
+ **Setting up a pfsense firewall and multiple Hyper-V Switches(The Hard Path)**
+ 
+ Insert Link to Documentation here
+ 
+ ## Completing Domain Controller Install
+ If you reached this point you should have the following done
+ 
+ - Server 2016 OS has been patched
+ - Your first server is connected with a hyper-v switch
+ 
+ 
