@@ -131,4 +131,31 @@ https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/HyperVNetworking
  - Server 2016 OS has been patched
  - Your first server is connected with a hyper-v switch
  
- 
+The first step in completing the domain controller install is to provide a static IP to your network card. In order to do this we first need to obtain the interface index to the nic card on the virtual machine. To do so enter powershell and run the command Get-NetAdapter as shown below
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PowerShell1.PNG)
+
+Next we need to run the following script. Make sure you change the Interface Index to what your network card is assigned to from the previous step. You can set whatever static IP address you would like your domain controller to be. In the easy network setup you only need to have one DNS server and it needs to be the IP of your domain controller. The connection Specific suffix is what your domain name is going to be. Mine is called seclab.local
+
+To invoke this powershell script you can either copy and paste my code or copy this powershell script to the domain controller. To execute please do the following.
+
+./InitialConfig_Domain_Controller.ps1
+
+https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Scripts/InitialConfig_Domain_Controller.ps1
+
+```
+New-NetIPaddress -InterfaceIndex 2 -IPAddress 172.16.2.5 -PrefixLength 24 -DefaultGateway 172.16.2.1
+Set-DNSClientServerAddress –InterfaceIndex 2 -ServerAddresses 172.16.2.5,172.16.2.1
+Set-DnsClient -InterfaceIndex 2 -ConnectionSpecificSuffix "seclab.local"
+Rename-Computer -NewName "DC1" -Restart
+```
+
+After you have selected a static IP and configured your DNS settings we will promote the first domain controller using the following powershell script. Reminder that your domain name does not have to be seclab.local
+
+https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Scripts/Install_First_DC.ps1
+
+```
+Get-WindowsFeature AD-Domain-Services | Install-WindowsFeature
+Import-Module ADDSDeployment
+Install-ADDSForest -DomainName “seclab.local”
+```
