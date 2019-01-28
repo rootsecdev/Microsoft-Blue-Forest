@@ -1,2 +1,3 @@
-This section contains security baselines for Windows 10/Server 2016/Server 2019 OS's. Anything custom out of Microsoft's default baselines
-will be labled appropriately.
+## Security Baseline 101
+
+This section contains security baselines for Windows 10 Workstation and Server 2016/2019 OS's along with anything custom out of Microsoft's default baselines will be labled appropriately.
