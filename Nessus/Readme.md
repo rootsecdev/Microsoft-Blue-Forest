@@ -68,7 +68,19 @@ Personally I prefer using a minimal based CLI install of Cent OS. Along with bei
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal6.PNG)
 
+20. Create a secure disk encryption passphrase. If you need help with this I would recommend a password manager such as:
+    - KeepassX https://www.keepassx.org/
+    - Read Diceware's page on creating secure passphrases http://world.std.com/~reinhold/diceware.html
+    
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal7.PNG)
 
+21. At this point you should be able to select "Begin Installation" from the menu
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal3.PNG)
+
+22. At this screen you will need to create a root password and a user for the Cent OS system. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal8.PNG)
 
 
 
