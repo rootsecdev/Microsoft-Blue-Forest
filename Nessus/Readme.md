@@ -36,4 +36,40 @@ Personally I prefer using a minimal based CLI install of Cent OS. Along with bei
 
 11. Click on Finish to the summary.
 
+12. Start up your Cent OS Virtual Machine. Select Install from the bootup menu.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal1.PNG)
+
+13. Choose what language you would like to use.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal2.PNG)
+
+14. Get into the network and host name settings.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal3.PNG)
+
+15. Turn the ethernet card to the "on" position. Click on Done to this screen.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal4.PNG)
+
+16. Go into the date and time menu next.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal3.PNG)
+
+17. Ensure that NTP is set to the "on" position and select your regional time zone you are on. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal5.PNG)
+
+18. Go to the installation destination from selection on the menu.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal3.PNG)
+
+19. Make sure automatically configure partitioning is selected and ensure encrypt my data is checkmarked. Its important to encrypt this VM as it will contain vulnerability data about your lab network. Those assets and data should be protected when you have the VM in a powered off mode to save on memory and cpu resources. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal6.PNG)
+
+
+
+
+
 ## Setting up Cento OS7 and Nessus using the gnome live CD.
