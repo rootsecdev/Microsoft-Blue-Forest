@@ -82,6 +82,59 @@ Personally I prefer using a minimal based CLI install of Cent OS. Along with bei
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal8.PNG)
 
+23. Once the install is complete click on the reboot button
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal9.PNG)
+
+24. Login with the user name and password that you did in step 22. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal10.PNG)
+
+25. Use the command "su" to get into the root account. Don't worry we will fix this later. As a best security practice you should never do this and disable the root login account geom being used.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal11.PNG)
+
+26. Next we are going to install the nano editor because VI really sucks and you will be confused on how to exit :) Issue the command "yum install nano" as shown in the screenshot. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal12.PNG)
+
+27. Hit "y" to complete the installation of nano.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal13.PNG)
+
+28. Issue the command: nano /etc/sudoers
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal14.PNG)
+
+29. You should notice in the above file about midway though it the %wheel group to run all commands is not commented out. There is nothing to do in the sudoers file so hit "ctrl x" to exit out of it. This verification is to serve as a check on how to modify this file should the wheel group be commented out. 
+
+30. Issue the following command to add a user to the Wheel group. In this example I add my account "rootsecdev" to the wheel group.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal15.PNG)
+
+31. Next we are going to edit the passwd file using nano. This is so we can disable the root account from getting logged into. This is equivalent to disabling the local administrative account on a windows machine. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal16.PNG)
+
+32. You will notice the root account has access to /bin/bash
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal17.PNG)
+
+33. Change to root account over to /sbin/nologin
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal18.PNG)
+
+34. At this point doing a ctrl x to save the file. At this point you should not be able to log directly into the root account. 
+
+35. Next use nano to modify the sshd_config file
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal19.PNG)
+
+36. uncomment the "permitrootlogin" and set it to no. The screenshot below illustrates this. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal20.PNG)
+
+37. Do a ctrl x to save the file. This setting change will not permit root logins over SSH. 
 
 
 ## Setting up Cento OS7 and Nessus using the gnome live CD.
