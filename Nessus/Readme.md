@@ -138,5 +138,22 @@ Personally I prefer using a minimal based CLI install of Cent OS. Along with bei
 
 37. Do a ctrl x to save the file. This setting change will not permit root logins over SSH. 
 
+38. This is the last step in configuring the Cent OS server install before we proceed with doing the nessus installation. Update the cent os system by issuing the following command:
 
+```
+sudo yum update
+
+```
+
+39. At this point the Cent OS portion of your configuration has been completed.
+
+## Gathering Installation files for Nessus
+
+1. On a host machine with internet access go to the following URL: https://www.tenable.com/downloads/nessus
+
+2. Select the RPM File for Red Hat 7/Cent OS 7/Oracle Linux 7
+
+3. On a host maching with internet access go to the following URL: https://winscp.net/eng/index.php
+
+4. Download WinSCP and install it. SCP will allow you to pass your file to your CentOS server. 
 ## Setting up Cento OS7 and Nessus using the gnome live CD.
