@@ -13,6 +13,6 @@ Give the switch a name and make sure private network is selected as the connecti
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/HVNetEasy3.PNG)
 
-Click on your Server 2016 or Server 2019 lab domain controller and select the Virtual switch you created in the previous step
+Click on your Server 2016/Server 2019 lab domain controller or any other VM you wish to use and select the Virtual switch you created in the previous step
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/HVNetEasy4.PNG)
