@@ -112,6 +112,8 @@ Personally I prefer using a minimal based CLI install of Cent OS. Along with bei
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal15.PNG)
 
+  - At this point issue the command "reboot" to reboot the server. Once rebooted log back into your user account.
+
 31. Next we are going to edit the passwd file using nano. This is so we can disable the root account from getting logged into. This is equivalent to disabling the local administrative account on a windows machine. 
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/CentOSMinimal16.PNG)
