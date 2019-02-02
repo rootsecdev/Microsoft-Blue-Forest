@@ -34,6 +34,8 @@ Plus More to be added over time!
 ## Table of Contents
 1. [Installing Your First Domain Controller](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/FirstDomainControllerInstall.md)
 
+2. [Deploying Microsoft LAPS in Enterprise Environments](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Microsoft%20LAPS/readme.md)
+
 
 
 
