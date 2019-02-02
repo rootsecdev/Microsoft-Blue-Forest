@@ -1,6 +1,6 @@
 # Deploying Microsoft LAPS in Enterprise Environments
 
-This instruction documentation goes over how to install Microsoft laptops in Enterprise environments. It contains how to extended out the Active Directory Schema, controll access via security groups, and automate deployments to workstations and servers. 
+This instruction documentation goes over how to install Microsoft laptops in Enterprise environments. Microsoft LAPS is a solution to rotate local administrative passwors on workstations and member servers. Having the same local admin password to all workstations creates a pretty large security risk that opens organizations to compromise. This documentation contains how to extend out the Active Directory Schema, control access via security groups, and automate deployments to workstations and servers. 
 
 **Do not deploy this to Active Directory Domain Controllers.... I repeat do not deploy this to Active Directory Domain Controllers.**
 
