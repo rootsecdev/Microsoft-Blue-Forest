@@ -29,7 +29,7 @@ This instruction documentation goes over how to install Microsoft laptops in Ent
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/LAPS3.jpg)
 
-   - Just a side note that the attirbutes published in step 3 and the computer's ability to update the attributes is a hidden field. Normal end users that have RSAT install will not be able to see them unless you delegate permissions. I'll get to how to do that in the next few steps. 
+   - Just a side note that the attirbutes published in step 3 and the computer's ability to update the attributes is a hidden field. Normal end users that have RSAT installed will not be able to see them unless you delegate permissions. I'll get to how to do that in the next few steps. 
    
 5. Next we should find extended rights holders in the OU's you deploy laps to. In this example I am looking at the workstations OU. This is a good audit check to make sure you haven't over delegated permissions to your OU's. By default in a fresh forest this is all you should see is system and domain admins. 
 
