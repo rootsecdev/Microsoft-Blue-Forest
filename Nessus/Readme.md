@@ -156,4 +156,16 @@ sudo yum update
 3. On a host maching with internet access go to the following URL: https://winscp.net/eng/index.php
 
 4. Download WinSCP and install it. SCP will allow you to pass your file to your CentOS server. 
+
+## Passing Nessus Installation to your CentOS machine
+
+1. Power off your Cent OS machine by issuing the following command to the device
+
+```
+sudo poweroff
+```
+
+2. Confirm your machine is on 
+
+
 ## Setting up Cento OS7 and Nessus using the gnome live CD.
