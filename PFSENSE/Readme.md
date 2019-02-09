@@ -68,3 +68,55 @@
    - MAC Addresses for each network card
    - The IP address range we want to use for the Management Network, and Private switch.
    - The IP address range for the private switch **must** match the IP address range your domain controller sits on
+
+6. Below is what I have documented for my network layout and the mac addresses associated with each virtual switch.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE16.PNG)
+   
+7. Start the pfsense vm. It should autostart. Hit accept to the first screen.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE17.PNG)
+   
+8. Select OK to start installing pfsense.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE18.PNG)
+   
+9. Leave the default keymap and hit select to continue.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE19.PNG)
+   
+10. Select auto ZFS for the partition
+  
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE20.PNG)
+    
+11. Hit select to proceed with installation
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE21.PNG)
+    
+12. Select ok to stripe with no redundancy
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE22.PNG)
+    
+13. Hit the spacebar to select the Microsoft virtual disk and select ok to continue
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE23.PNG)
+    
+14. If you are asked to destroy the current status of the disk. Select yes to continue
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE24.PNG)
+    
+15. At this point the installed should start laying down the OS. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE25.PNG)
+    
+16. Select no if you are asked to open a shell at the end of install. This is not necessary. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE26.PNG)
+    
+17. Select reboot at the completion screen
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE27.PNG)
+    
+18. After the reboot it will be necessary to power off the vm. Once the VM is powered off remove the pfsense ISO from the virtual DVD drive. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE28.PNG)
