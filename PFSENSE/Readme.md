@@ -171,7 +171,7 @@
     
 28. Type in your start and ending address range for your LAN1 configuration. I suggest leaving some finite amount of IP addresses for static addresses for your management network. In this example I am starting with 172.16.1.10 and ending it in 172.16.1.254. That leaves 172.16.1.2 - 172.16.1.9 as our static ranges which should be more than enough static ranges for the management network. 
 
-   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE42.PNG)
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE42.PNG)
    
 29. Select n for the http configurator question. We want to use https for our web configuration so no passwords can be intercepted when we use the web interface to configure the pfsense vm. 
 
@@ -245,3 +245,6 @@ Preface: Since we have a pfsense virtual machine up and part of it has the abili
 New-NetFirewallRule -DisplayName "Deny Inbound Traffic on Management vnic" -Direction Inbound -LocalAddress 172.16.1.2 -Action Block -Enabled True
 
 ```
+
+## Configure pfsense VM through web interface
+
