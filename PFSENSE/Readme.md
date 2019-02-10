@@ -177,6 +177,71 @@
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE43.PNG)
     
-30. Take note of this URL. This is our pfsense web management url.
+30. Take note of this URL. This is our pfsense web management url. Press enter to continue.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE44.PNG)
+
+31. Select option 2 again so we can assign an IP address to OPT1 which would be our private network.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE45.PNG)
+    
+32. For the available interfaces select 3 to configure the OPT1 interface.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE47.PNG)
+    
+33. For the IPv4 address you will need to put your starting IP address for the IP range you select. In this example my range for the private network switch is 172.16.2.1 as shown below. Keep in mind this range needs to be used for the domain controller you may have already built. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE48.PNG)
+    
+34. The bit count should be set to 24 for the OPT1 network.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE49.PNG)
+    
+35. Press enter for the upstream gateway connection question. Nothing needs to be configured here. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE50.PNG)
+    
+36. Press enter for the IPv6 address. Nothing needs to be configured here. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE51.PNG)
+    
+37. Type y to enable the dhcp server option on OPT1.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE52.PNG)
+    
+38. Type in your start and ending address range for your OPT1 configuration. I suggest leaving some finite amount of IP addresses for static addresses for your management network. In this example I am starting with 172.16.2.10 and ending it in 172.16.2.254. That leaves 172.16.2.2 - 172.16.2.9 as our static ranges which should be more than enough static ranges for the private network. This is just a reminder that your active directory network sits on the OPT1 (Private network) connection so that it can have no contact with your hyper-v host or your other network devices sitting on your regular network. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE53.PNG)
+    
+39. Type n so that http is not reverted as the web configurator protocol. HTTPS should be used.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE54.PNG)
+    
+40. Press enter to continue.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE55.PNG)
+    
+41. This concludes setting up the initial pfsense box through the shell interface. From this point forward you will be able to use the web interface to do the rest of the pfsense configuration.
+
+## Hardening your defenses on your hyper-v host when using pfsense
+
+Preface: Since we have a pfsense virtual machine up and part of it has the ability to communicate to our hyper-v host on the management network we will need to harden some of our defenses on our hyper-v host. Protecting your hyper-v host especially in a lab environment is important from a segregation perspective. 
+
+1. From the Windows 10 host control panel and network connections you will need to right click on the vEthernet (Management Network) card. These network adapters get created any time you create a new virtual switch in hyper-v that is internally connected to your host. This is what gives your host the ability to communicate with anything on the hyper-v switch network connection. Select TCP/IPv4 properties. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE56.PNG)
+   
+2. Assign a static IP address to this network card. Since I used a IP address range of 172.16.1.1/24 and since my DHCP range started at 172.16.1.10, I will assign the IP address of 172.16.1.2 to my physical management network adapter. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE57.PNG)
+   
+3. Open the advance properties of the management network in the TCP/IPv4 configuration in the network card. Go over to the WINS tab. Please disable netbios over TCP/IP. It should not be needed and this setting with ensure attaching to things via SMB doesn't dump NTLM hashes when connecting to anything on your management network. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE58.PNG)
+  
+4. At this point we need to configure the Windows Defender Firewall to Deny connections on our hyper-v host coming from our management network. This further protects our hyper-v host from the management network. So if any inbound traffic happens to his 172.16.1.2 if will get denied because of the firewall rule. You can do so in an elevated powershell window with the code below(test code on hyper-v host then remove this comment):
+
+```
+New-NetFirewallRule -DisplayName "Deny Inbound Traffic on Management vnic" -Direction Inbound -LocalAddress 172.16.1.2 -Action Block -Enabled True
+
+```
