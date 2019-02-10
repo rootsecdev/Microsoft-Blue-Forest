@@ -120,3 +120,33 @@
 18. After the reboot it will be necessary to power off the vm. Once the VM is powered off remove the pfsense ISO from the virtual DVD drive. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE28.PNG)
+
+19. Power back on the pfsense VM. Once it boots you will get asked if you want to set up VLAN's now. Type "n" for No to continue
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE29.PNG)
+    
+20. Next you will be asked to Enter the WAN interface. Type in hn0 to continue. You will notice the MAC address for hn0 matches the nic card that we set up for the bridged network.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE30.PNG)
+    
+21. For the LAN interface type in hn1. You will notice the MAC address for hn0 matches the nic card for the management network.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE31.PNG)
+    
+22. Finally for the optional interface type in hn2. You will notice the MAC address for hn2 matches the nic card for our private switch network card. Secondly you will notice it matches our IP address range I assigned to my domain controller. (redo screenshot for documentation. Screenshot shows hn1)
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE32.PNG) 
+   
+23. Type y to proceed with the configuration (redo screenshot for documentation. Screenshot shows wrong order)
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE33.PNG)
+    
+24. You will notice that the IP address for our LAN does not match what we actually need for our LAN (management network). This will need to be changed. (redo screenshot for documentation. Screenshot shows wrong order)
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE35.PNG)
+    
+25. Enter Option 2 to assign IP addresses to our interfaces. Select 2 for LAN. (redo screenshot for documentation. Screenshot shows wrong order)
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE36.PNG)
+   
+23. 
