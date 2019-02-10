@@ -129,7 +129,7 @@
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE30.PNG)
     
-21. For the LAN interface type in hn1. You will notice the MAC address for hn0 matches the nic card for the management network.
+21. For the LAN interface type in hn1. You will notice the MAC address for hn1 matches the nic card for the management network.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE31.PNG)
     
