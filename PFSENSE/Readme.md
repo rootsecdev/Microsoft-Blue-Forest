@@ -133,19 +133,19 @@
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE31.PNG)
     
-22. Finally for the optional interface type in hn2. You will notice the MAC address for hn2 matches the nic card for our private switch network card. Secondly you will notice it matches our IP address range I assigned to my domain controller. (redo screenshot for documentation. Screenshot shows hn1)
+22. Finally for the optional interface type in hn2. You will notice the MAC address for hn2 matches the nic card for our private switch network card. Secondly you will notice it matches our IP address range I assigned to my domain controller.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE32.PNG) 
    
-23. Type y to proceed with the configuration (redo screenshot for documentation. Screenshot shows wrong order)
+23. Type y to proceed with the configuration
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE33.PNG)
     
-24. You will notice that the IP address for our LAN does not match what we actually need for our LAN (management network). This will need to be changed. (redo screenshot for documentation. Screenshot shows wrong order)
+24. You will notice that the IP address for our LAN does not match what we actually need for our LAN (management network). This will need to be changed.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE35.PNG)
     
-25. Enter Option 2 to assign IP addresses to our interfaces. Select 2 for LAN. (redo screenshot for documentation. Screenshot shows wrong order)
+25. Enter Option 2 to assign IP addresses to our interfaces. Select 2 for LAN.
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE36.PNG)
    
