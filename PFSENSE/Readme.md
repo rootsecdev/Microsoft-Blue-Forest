@@ -153,6 +153,30 @@
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE37.PNG)
    
-24. Enter 24 for the subnet mask range. (redo screenshot)
+24. Enter 24 for the subnet mask range.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE38.PNG)
+    
+25. Press enter for the gateway upstream configuration. Nothing needs to be configured here.
+    
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE39.PNG)
+    
+26. Press enter for the IPv6 configuration. Nothing needs to be configured here.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE40.PNG)
+    
+27. Press y to enable DHCP and press enter.
+   
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE41.PNG)
+    
+28. Type in your start and ending address range for your LAN1 configuration. I suggest leaving some finite amount of IP addresses for static addresses for your management network. In this example I am starting with 172.16.1.10 and ending it in 172.16.1.254. That leaves 172.16.1.2 - 172.16.1.9 as our static ranges which should be more than enough static ranges for the management network. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE42.PNG)
+   
+29. Select n for the http configurator question. We want to use https for our web configuration so no passwords can be intercepted when we use the web interface to configure the pfsense vm. 
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE43.PNG)
+    
+30. Take note of this URL. This is our pfsense web management url.
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE44.PNG)
