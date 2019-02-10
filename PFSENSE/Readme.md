@@ -149,4 +149,10 @@
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE36.PNG)
    
-23. 
+23. Enter your LAN IP address that you have selected for your management adapter. In this example my IP address is 172.16.1.1.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE37.PNG)
+   
+24. Enter 24 for the subnet mask range. (redo screenshot)
+
+    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE38.PNG)
