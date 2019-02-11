@@ -239,7 +239,7 @@ Preface: Since we have a pfsense virtual machine up and part of it has the abili
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE58.PNG)
   
-4. At this point we need to configure the Windows Defender Firewall to Deny connections on our hyper-v host coming from our management network. This further protects our hyper-v host from the management network. So if any inbound traffic happens to his 172.16.1.2 if will get denied because of the firewall rule. You can do so in an elevated powershell window with the code below(test code on hyper-v host then remove this comment):
+4. At this point we need to configure the Windows Defender Firewall to Deny connections on our hyper-v host coming from our management network. This further protects our hyper-v host from the management network. So if any inbound traffic happens to hit 172.16.1.2 if will get denied because of the firewall rule. If your management vnic has a different IP then adjust code accordingly. You can create the firewall rule in an elevated powershell window with the code below:
 
 ```
 New-NetFirewallRule -DisplayName "Deny Inbound Traffic on Management vnic" -Direction Inbound -LocalAddress 172.16.1.2 -Action Block -Enabled True
