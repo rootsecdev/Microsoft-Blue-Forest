@@ -248,3 +248,4 @@ New-NetFirewallRule -DisplayName "Deny Inbound Traffic on Management vnic" -Dire
 
 ## Configure pfsense VM through web interface
 
+1. At this point open a web browser window. (Do not use IE for this...get real!)  I prefer doing this with google chrome. 
