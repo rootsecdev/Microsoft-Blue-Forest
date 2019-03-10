@@ -7,3 +7,7 @@ https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-bes
 
 https://www.microsoft.com/en-us/download/details.aspx?id=38815
 
+**Planning for Compromise**
+
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/planning-for-compromise
+
