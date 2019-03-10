@@ -32,9 +32,17 @@ A Blue Forest is centered around Blue Team operational security in domain networ
 Plus More to be added over time!
 
 ## Table of Contents
-1. [Installing Your First Domain Controller](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/FirstDomainControllerInstall.md)
 
-2. [Deploying Microsoft LAPS in Enterprise Environments](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Microsoft%20LAPS/readme.md)
+1. [Installing a PFSENSE Firewall](https://github.com/rootsecdev/Microsoft-Blue-Forest/tree/master/PFSENSE) (Documentation Incomplete)
+
+2. [Installing a nessus scanner](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Nessus/Readme.md) (Documentation Incomplete)
+
+3. [Installing Your First Domain Controller](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/FirstDomainControllerInstall.md)
+
+4. [Deploying Microsoft LAPS in Enterprise Environments](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Microsoft%20LAPS/readme.md)
+
+5. [Deploying Security Baselines in a Active Directory Environment](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Readme.md) (Documentation Incomplete)
+
 
 
 
