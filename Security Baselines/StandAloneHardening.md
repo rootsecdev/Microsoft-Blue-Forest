@@ -52,3 +52,13 @@
     setx /M MP_FORCE_USE_SANDBOX 1
     ```
     The following reference url will explain more about this setting: https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/
+    
+ 10. Navigate to the following GPO to turn off Local Link multicast name resolution:
+ 
+     Computer Configuration\Administrative Templates\Network\DNS Client
+     
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec6.PNG)
+     
+ 11. Navigate to the following GPO to restrict NTLM authententication to remote servers
+
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec7.PNG)
