@@ -45,3 +45,10 @@
    Open the following GPO setting and put the following patch of your EP.XML file as shown below. This will configure Windows Defender Exploit Guard (Formerly EMET)
    
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec5.PNG)
+   
+ 9. Type the following in an administrative command prompt window to put Windows Defender into a sandboxed mode
+
+    ```
+    setx /M MP_FORCE_USE_SANDBOX 1
+    ```
+    The following reference url will explain more about this setting: https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/
