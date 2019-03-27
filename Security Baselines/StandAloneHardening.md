@@ -53,12 +53,24 @@
     ```
     The following reference url will explain more about this setting: https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/
     
- 10. Navigate to the following GPO to turn off Local Link multicast name resolution:
+ 10. Setup Windows Defender Block at first sight: (Enforce the bottom two policies. The rest has been set up for you with the powershell script)
+     
+     In the Group Policy Management Editor, expand the tree to Windows components > Windows Defender Antivirus > Real-time Protection:
+     
+     A. Double-click Scan all downloaded files and attachments and ensure the option is set to Enabled. Click OK.
+     
+     B. Double-click Turn off real-time protection and ensure the option is set to Disabled. Click OK.
+     
+     Reference URL: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus
+    
+ 11. Navigate to the following GPO to turn off Local Link multicast name resolution:
  
      Computer Configuration\Administrative Templates\Network\DNS Client
      
      ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec6.PNG)
      
- 11. Navigate to the following GPO to restrict NTLM authententication to remote servers
+ 12. Navigate to the following GPO to restrict NTLM authententication to remote servers
+ 
+     Computer Configuration\Windows Settings\Security Settings\Security Options
 
      ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec7.PNG)
