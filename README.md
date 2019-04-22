@@ -43,7 +43,7 @@ Plus More to be added over time!
 
 5. [Deploying Security Baselines in a Active Directory Environment](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Readme.md) (Documentation Incomplete)
 
-
+6. [Windows 10 Non Domain Joined Security Hardening](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/StandAloneHardening.md)
 
 
 
