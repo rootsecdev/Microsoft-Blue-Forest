@@ -8,6 +8,10 @@ Reference Documentation:
 
 https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10
 
+**Windows Security Configuration Framework**
+
+https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework
+
 **Windows Restricted Traffic Limited Functionality Baseline**
 
 https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
