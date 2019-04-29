@@ -48,3 +48,5 @@ Set-AzVMDiskEncryptionExtension -ResourceGroupName $VMRGname -VMName $vmName -Di
  https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-windows
  
  https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-prerequisites
+
+ https://docs.microsoft.com/en-us/azure/virtual-machines/linux/encrypt-disks
