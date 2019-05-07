@@ -35,7 +35,7 @@
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE8.PNG)
    
-8. Allocate 2 gig worth of space for the VM. This should be more than enough to run a pfsense box and upgrade the pfsense box as needed. 
+8. Allocate 5 gig worth of space for the VM. This should be more than enough to run a pfsense box and upgrade the pfsense box as needed. 
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE9.PNG)
    
