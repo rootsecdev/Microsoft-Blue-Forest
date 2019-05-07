@@ -89,139 +89,123 @@
   
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE20.PNG)
     
-11. Hit select to proceed with installation
-
-    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE21.PNG)
-    
-12. Select ok to stripe with no redundancy
-
-    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE22.PNG)
-    
-13. Hit the spacebar to select the Microsoft virtual disk and select ok to continue
-
-    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE23.PNG)
-    
-14. If you are asked to destroy the current status of the disk. Select yes to continue
-
-    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE24.PNG)
-    
-15. At this point the installed should start laying down the OS. 
+11. At this point the installed should start laying down the OS. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE25.PNG)
     
-16. Select no if you are asked to open a shell at the end of install. This is not necessary. 
+12. Select no if you are asked to open a shell at the end of install. This is not necessary. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE26.PNG)
     
-17. Select reboot at the completion screen
+13. Select reboot at the completion screen
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE27.PNG)
     
-18. After the reboot it will be necessary to power off the vm. Once the VM is powered off remove the pfsense ISO from the virtual DVD drive. 
+14. After the reboot it will be necessary to power off the vm. Once the VM is powered off remove the pfsense ISO from the virtual DVD drive. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE28.PNG)
 
-19. Power back on the pfsense VM. Once it boots you will get asked if you want to set up VLAN's now. Type "n" for No to continue
+15. Power back on the pfsense VM. Once it boots you will get asked if you want to set up VLAN's now. Type "n" for No to continue
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE29.PNG)
     
-20. Next you will be asked to Enter the WAN interface. Type in hn0 to continue. You will notice the MAC address for hn0 matches the nic card that we set up for the bridged network.
+16. Next you will be asked to Enter the WAN interface. Type in hn0 to continue. You will notice the MAC address for hn0 matches the nic card that we set up for the bridged network.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE30.PNG)
     
-21. For the LAN interface type in hn1. You will notice the MAC address for hn1 matches the nic card for the management network.
+17. For the LAN interface type in hn1. You will notice the MAC address for hn1 matches the nic card for the management network.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE31.PNG)
     
-22. Finally for the optional interface type in hn2. You will notice the MAC address for hn2 matches the nic card for our private switch network card. Secondly you will notice it matches our IP address range I assigned to my domain controller.
+18. Finally for the optional interface type in hn2. You will notice the MAC address for hn2 matches the nic card for our private switch network card. Secondly you will notice it matches our IP address range I assigned to my domain controller.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE32.PNG) 
    
-23. Type y to proceed with the configuration
+19. Type y to proceed with the configuration
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE33.PNG)
     
-24. You will notice that the IP address for our LAN does not match what we actually need for our LAN (management network). This will need to be changed.
+20. You will notice that the IP address for our LAN does not match what we actually need for our LAN (management network). This will need to be changed.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE35.PNG)
     
-25. Enter Option 2 to assign IP addresses to our interfaces. Select 2 for LAN.
+21. Enter Option 2 to assign IP addresses to our interfaces. Select 2 for LAN.
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE36.PNG)
    
-23. Enter your LAN IP address that you have selected for your management adapter. In this example my IP address is 172.16.1.1.
+22. Enter your LAN IP address that you have selected for your management adapter. In this example my IP address is 172.16.1.1.
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE37.PNG)
    
-24. Enter 24 for the subnet mask range.
+23. Enter 24 for the subnet mask range.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE38.PNG)
     
-25. Press enter for the gateway upstream configuration. Nothing needs to be configured here.
+24. Press enter for the gateway upstream configuration. Nothing needs to be configured here.
     
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE39.PNG)
     
-26. Press enter for the IPv6 configuration. Nothing needs to be configured here.
+25. Press enter for the IPv6 configuration. Nothing needs to be configured here.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE40.PNG)
     
-27. Press y to enable DHCP and press enter.
+26. Press y to enable DHCP and press enter.
    
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE41.PNG)
     
-28. Type in your start and ending address range for your LAN1 configuration. I suggest leaving some finite amount of IP addresses for static addresses for your management network. In this example I am starting with 172.16.1.10 and ending it in 172.16.1.254. That leaves 172.16.1.2 - 172.16.1.9 as our static ranges which should be more than enough static ranges for the management network. 
+27. Type in your start and ending address range for your LAN1 configuration. I suggest leaving some finite amount of IP addresses for static addresses for your management network. In this example I am starting with 172.16.1.10 and ending it in 172.16.1.254. That leaves 172.16.1.2 - 172.16.1.9 as our static ranges which should be more than enough static ranges for the management network. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE42.PNG)
    
-29. Select n for the http configurator question. We want to use https for our web configuration so no passwords can be intercepted when we use the web interface to configure the pfsense vm. 
+28. Select n for the http configurator question. We want to use https for our web configuration so no passwords can be intercepted when we use the web interface to configure the pfsense vm. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE43.PNG)
     
-30. Take note of this URL. This is our pfsense web management url. Press enter to continue.
+29. Take note of this URL. This is our pfsense web management url. Press enter to continue.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE44.PNG)
 
-31. Select option 2 again so we can assign an IP address to OPT1 which would be our private network.
+30. Select option 2 again so we can assign an IP address to OPT1 which would be our private network.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE45.PNG)
     
-32. For the available interfaces select 3 to configure the OPT1 interface.
+31. For the available interfaces select 3 to configure the OPT1 interface.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE47.PNG)
     
-33. For the IPv4 address you will need to put your starting IP address for the IP range you select. In this example my range for the private network switch is 172.16.2.1 as shown below. Keep in mind this range needs to be used for the domain controller you may have already built. 
+32. For the IPv4 address you will need to put your starting IP address for the IP range you select. In this example my range for the private network switch is 172.16.2.1 as shown below. Keep in mind this range needs to be used for the domain controller you may have already built. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE48.PNG)
     
-34. The bit count should be set to 24 for the OPT1 network.
+33. The bit count should be set to 24 for the OPT1 network.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE49.PNG)
     
-35. Press enter for the upstream gateway connection question. Nothing needs to be configured here. 
+34. Press enter for the upstream gateway connection question. Nothing needs to be configured here. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE50.PNG)
     
-36. Press enter for the IPv6 address. Nothing needs to be configured here. 
+35. Press enter for the IPv6 address. Nothing needs to be configured here. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE51.PNG)
     
-37. Type y to enable the dhcp server option on OPT1.
+36. Type y to enable the dhcp server option on OPT1.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE52.PNG)
     
-38. Type in your start and ending address range for your OPT1 configuration. I suggest leaving some finite amount of IP addresses for static addresses for your management network. In this example I am starting with 172.16.2.10 and ending it in 172.16.2.254. That leaves 172.16.2.2 - 172.16.2.9 as our static ranges which should be more than enough static ranges for the private network. This is just a reminder that your active directory network sits on the OPT1 (Private network) connection so that it can have no contact with your hyper-v host or your other network devices sitting on your regular network. 
+37. Type in your start and ending address range for your OPT1 configuration. I suggest leaving some finite amount of IP addresses for static addresses for your management network. In this example I am starting with 172.16.2.10 and ending it in 172.16.2.254. That leaves 172.16.2.2 - 172.16.2.9 as our static ranges which should be more than enough static ranges for the private network. This is just a reminder that your active directory network sits on the OPT1 (Private network) connection so that it can have no contact with your hyper-v host or your other network devices sitting on your regular network. 
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE53.PNG)
     
-39. Type n so that http is not reverted as the web configurator protocol. HTTPS should be used.
+38. Type n so that http is not reverted as the web configurator protocol. HTTPS should be used.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE54.PNG)
     
-40. Press enter to continue.
+39. Press enter to continue.
 
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE55.PNG)
     
-41. This concludes setting up the initial pfsense box through the shell interface. From this point forward you will be able to use the web interface to do the rest of the pfsense configuration.
+40. This concludes setting up the initial pfsense box through the shell interface. From this point forward you will be able to use the web interface to do the rest of the pfsense configuration.
 
 ## Hardening your defenses on your hyper-v host when using pfsense
 
