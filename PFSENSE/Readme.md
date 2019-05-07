@@ -85,7 +85,7 @@
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE19.PNG)
    
-10. Select auto ZFS for the partition
+10. Select auto UFS for the partition
   
     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE20.PNG)
     
