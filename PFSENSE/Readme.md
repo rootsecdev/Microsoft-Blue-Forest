@@ -234,4 +234,57 @@ New-NetFirewallRule -DisplayName "Deny Inbound Traffic on Management vnic" -Dire
 
 1. At this point open a web browser window. Google Chrome, Microsoft Edge or Firefox will be fine to use to access. 
 
-2. 
+2. The website address should the address of your HN1 (LAN) in pfsense. In this case my address is https://172.16.1.1. The Certificate errors can be ignored.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE60.PNG)
+
+3. Sign into the website with the ID of "admin" and the password "pfsense"
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE61.PNG)
+   
+4. Click on Next to the first wizard screen.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE62.PNG)
+   
+5. Click on next again.
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE63.PNG)
+   
+6. On the local domain and DNS setup click on next. Later I'll show how we can set DNS and the domain per network on LAN and OPT1. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE64.PNG)
+   
+7. Configure the time server according to the time zone you are in. I left the default NTP server but you are free to replace with a different NTP server if necessary. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE65.PNG)
+   
+8. The WAN network should be configured with DHCP. This is the default for this network. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE66.PNG)
+   
+9. Uncheck "Block RFC1918 private networks entering via WAN. This is left uncheck because in my configuration the WAN network is using a RFC1918 private network for the WAN address. This only needs to be checked if your WAN network is using a public IP outside of a private address space. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE67.PNG)
+   
+10. The LAN address was initially set up during the PFSENSE installation process. I don't wish to change my LAN address so I will click on next for this setting. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE68.PNG)
+   
+11. At this screen you are required to change the password to a secure password of your choosing. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE69.PNG)
+   
+12. We are now towards the end of the pfsense setup process. Click on the reload button. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE70.PNG)
+   
+13. You will now see screen with the reload of pfsense in progress. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE71.PNG)
+   
+14. Click on Finish now that pfsense is configured. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE72.PNG)
+   
+15. Click on accept to the banner about pfsense not allowed for commercial distribution
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE73.PNG)
