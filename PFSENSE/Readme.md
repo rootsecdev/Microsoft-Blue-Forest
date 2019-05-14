@@ -288,3 +288,33 @@ New-NetFirewallRule -DisplayName "Deny Inbound Traffic on Management vnic" -Dire
 15. Click on accept to the banner about pfsense not allowed for commercial distribution
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE73.PNG)
+
+16. On the top menu click on Firewall > Rules. Make sure LAN is selected. Pay attention to the lockout rule at the top of the menu. We will set up a new anti lockout rule that is specifically pointed to your machine host. We will also force it over an encrypted connection on port 443. Click on the "Add button" with the up arrow.
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE74.PNG)
+   
+17. Next you will want to allow traffic over TCP/IPv4 to your host IP that is 172.16.1.2. This is the IP you assigned to your adapter to communicate to your management (LAN) Network. The destination address will be over https (443) to the IP of your pfsense vm. For mine it is 172.16.1.1. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE75.PNG)
+   
+18. I've called this rule a hardened antilockout rule. Click on Save when finished. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE76.PNG)
+   
+19. Click on apply to put the changes into effect. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE77.PNG)
+   
+20. Next you should see a message that the change was applied successfully. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE78.PNG)
+   
+21. Now we will need to delete the default antilockout rule as shown below. Click on the gear icon to the right of the rule. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE79.PNG)
+   
+22. Place a checkmark next to the setting to disable the webconfigurator anti lockout rule. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE80.PNG)
+
+   
