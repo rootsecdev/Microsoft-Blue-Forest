@@ -317,4 +317,14 @@ New-NetFirewallRule -DisplayName "Deny Inbound Traffic on Management vnic" -Dire
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE80.PNG)
 
+23. At this point you can save the changes and it should be successfully applied. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE81.PNG)
    
+24. Your Rules should look similiar to this. As you will notice earlier in my documentation 172.16.1.2 is the static IP I gave my management vnic. This rule ensures only my management vnic has access to my pfsense web interface. 
+
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/PFSENSE82.PNG)
+   
+25. At this point your LAN network is configured. Keep in mind this is a very basic firewall setup that is any traffic over IPv4 and IPv6. For the OPT1 network you will need to add the same IPv4 and IPv6 fules as the LAN network. The reason why I am allowing all traffic is that we will configure the Windows Firewall through group policy to restrict traffic within our OPT network. 
+
+26. Your OPT1 network rules should look like this:
