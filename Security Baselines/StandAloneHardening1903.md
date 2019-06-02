@@ -51,11 +51,7 @@
      
      Reference URL: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus
     
- 11. Navigate to the following GPO to turn off Local Link multicast name resolution:
  
-     Computer Configuration\Administrative Templates\Network\DNS Client
-     
-     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec6.PNG)
      
  12. Navigate to the following GPO to restrict NTLM authententication to remote servers
  
