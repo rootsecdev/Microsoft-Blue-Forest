@@ -12,7 +12,7 @@
  
 3. Place the LGPO.exe into the tools directory
 
-   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec1.PNG)
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-1.PNG)
   
 4. Open Powershell in administrative mode and temporarily set the execution policy of powershell to unrestricted with the following code:
 
@@ -26,13 +26,12 @@
    .\BaselineLocalInstall.ps1 -Win10NonDomainJoined
    ```
 
-   Type r to run once on execution of the script
-  
-   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec2.PNG)
+     
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-2.PNG)
    
 6. At this point the following baselines referenced below will automatically install:
  
-   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec3.PNG)
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-3.PNG)
    
 7. Next copy the EP.XML from the config files directory to a new directory on the C:\ drive. In this example I created a directory called C:\ExploitProtection
 
