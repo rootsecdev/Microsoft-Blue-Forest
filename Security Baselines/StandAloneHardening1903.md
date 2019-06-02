@@ -60,3 +60,34 @@
      ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec7.PNG)
      
  12. Go to Control Panel and click on Bitlocker Drive Encryption. Turn on 
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-4.PNG)
+     
+ 13. Choose your Method for saving your recovery key. (I suggest printing it off using the PDF printer then encrypting with an asymetric key. I'll get to that later in my hardening guide)
+ 
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-5.PNG)
+     
+ 14. Choose what drive encryption method to use. If you are testing this in a virtual machine choose used space only. If this is on a physical hard disk I would choose to encrypt the entire drive.
+ 
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-6.PNG)
+     
+ 15. You can either choose to run a system check (I'd recommend doing) or proceeding to encrypt the machine. 
+ 
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-8.PNG)
+     
+ 16. The machine At this point should encrypt.If you are using the "used space only" method the encryption process should go relatively quick.
+ 
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-9.PNG)
+     
+ 17. You will get a notification once the machine is done encrypting.
+ 
+     ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-10.PNG)
+     
+ 18. Open an elevated command prompt and type the following command:
+ 
+ ```
+ manage-bde -status c:
+ ```
+ 
+ Please note your machine has been default encrypted with XTS-AES-128. If you require something higher such as XTS-AES-256 you will need to specify it in group policy. 
+ 
+     
