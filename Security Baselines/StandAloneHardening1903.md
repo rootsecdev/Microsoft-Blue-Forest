@@ -55,6 +55,6 @@
      
  12. Navigate to the following GPO to restrict NTLM authententication to remote servers
  
-     Computer Configuration\Windows Settings\Security Settings\Security Options
+     Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options
 
      ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec7.PNG)
