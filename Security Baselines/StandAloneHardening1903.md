@@ -53,8 +53,10 @@
     
  
      
- 12. Navigate to the following GPO to restrict NTLM authententication to remote servers
+ 11. Navigate to the following GPO to restrict NTLM authententication to remote servers
  
      Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options
 
      ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec7.PNG)
+     
+ 12. Go to Control Panel and click on Bitlocker Drive Encryption. Turn on 
