@@ -33,19 +33,8 @@
  
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-3.PNG)
    
-7. Next copy the EP.XML from the config files directory to a new directory on the C:\ drive. In this example I created a directory called C:\ExploitProtection
-
-   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec4.PNG)
-   
-8. Navigate to the following group policy object:
-  
-   Computer Configuration\Administrative Templates\Windows Components\Windows Defender Exploit Guard\Exploit Protection
-   
-   Open the following GPO setting and put the following patch of your EP.XML file as shown below. This will configure Windows Defender Exploit Guard (Formerly EMET)
-   
-   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StdAloneSec5.PNG)
-   
- 9. Type the following in an administrative command prompt window to put Windows Defender into a sandboxed mode
+ 
+9. Type the following in an administrative command prompt window to put Windows Defender into a sandboxed mode
 
     ```
     setx /M MP_FORCE_USE_SANDBOX 1
