@@ -41,7 +41,13 @@
     ```
     The following reference url will explain more about this setting: https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/
     
- 10. Setup Windows Defender Block at first sight: (Enforce the bottom two policies. The rest has been set up for you with the powershell script)
+ 10. Setup Windows Defender Block at first sight: (Enforce the bottom policies. The rest has been set up for you with the powershell script). To get to the local group policy editor type in gpedit.msc in the search bar, command prompt, or run box.
+ 
+     In the Group Policy Management Editor, expand the tree to Windows Components > Windows Defender Antivirus > MAPS
+     
+     A. Double-click Join Microsoft MAPS and set to enabled with Advanded MAPS. Click ok.
+     
+     B. Double-click Block at first site and set to enabled. Click ok. 
      
      In the Group Policy Management Editor, expand the tree to Windows components > Windows Defender Antivirus > Real-time Protection:
      
