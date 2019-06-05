@@ -96,4 +96,5 @@
  
  Please note your machine has been default encrypted with XTS-AES-128. If you require something higher such as XTS-AES-256 you will need to specify it in group policy. 
  
-     
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-11.PNG)
+   
