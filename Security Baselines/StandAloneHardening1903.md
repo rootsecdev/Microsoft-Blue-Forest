@@ -98,3 +98,10 @@
  
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-11.PNG)
    
+19. Next week will manadate that a Pin with a TPM chip is required for additional startup. Navigate to the following group policy by starting up gpedit.msc
+
+Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption\Operating system drives
+
+  ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-12.PNG)
+  
+20. 
