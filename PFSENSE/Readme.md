@@ -1,6 +1,6 @@
 # Building a PFSENSE Firewall in Hyper-V
 
-## Disclaimer: I am a PFSENSE fraud. Everything I learned about PFSENSE is because of @da_667. If you want to learn more about PFSENSE and setting up virtual lab networks then buy his book here >> https://www.amazon.com/Building-Virtual-Machine-Labs-Hands/dp/1546932631/ref=sr_1_1?crid=T3NGL42B7MYL&keywords=building+virtual+machine+labs&qid=1558178883&s=gateway&sprefix=building+virtual+machi%2Caps%2C167&sr=8-1
+### Disclaimer: Everything I learned about PFSENSE is because of @da_667. If you want to learn more about PFSENSE and setting up virtual lab networks then buy his book here >> https://www.amazon.com/Building-Virtual-Machine-Labs-Hands/dp/1546932631/ref=sr_1_1?crid=T3NGL42B7MYL&keywords=building+virtual+machine+labs&qid=1558178883&s=gateway&sprefix=building+virtual+machi%2Caps%2C167&sr=8-1
 
 
 1. In Hyper-V go to your switch manager. 
