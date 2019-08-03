@@ -18,10 +18,12 @@
  
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Honeypots/Screenshots/HoneyTokens4.JPG)
   
-5. Next attacker attempts to pass the hass using a psexec using our fake AD credentials
+5. Next attacker attempts to pass the hash using a psexec using our fake AD credentials
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Honeypots/Screenshots/HoneyTokens5.JPG)
   
 6. Here is what to look for in event logging to detect PtH activity on the fake account.
 
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Honeypots/Screenshots/HoneyTokens6.JPG)
+   
+## How to automate spreading fake ad creds with group policy
