@@ -1,5 +1,7 @@
 # How to Apply Security Baselines to Non-Domain Joined machines running Windows 10 Version 1903 (Experimental. Testing Changes)
 
+## Update. Please hold off on using the existing zip file. I will need to fix a problem with bitlocker trying to contact a domain controller prior to encryption. That won't work since the instructions is for standalone use. 
+
 1. Download Windows 10 Custom Zip:
 
    https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Win10%20Custom.zip
