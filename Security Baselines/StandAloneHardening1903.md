@@ -46,7 +46,7 @@
 Dism /online /Disable-Feature /FeatureName:"MicrosoftWindowsPowerShellV2Root"
 ```
 
-11. Bitlocker Security
+## Bitlocker Security
 
 By default bitlocker is configured with XTS-AES-128 encryption and preboot authentication is left off by default. Its highly recommended that you turn on preboot authentication. Preboot authentication is explained in the following document for bitlocker countermeasures:
 
@@ -56,13 +56,25 @@ Preboot authentication can be turned on in the following location for your opera
 
 Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption\Operating System Drives\Require Additional Authentication at startup
 
+If your host machine has a TPM chip set the following options:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAlone1903-1.PNG)
+
+If your host machine does not have a TPM chip set the following options:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAlone1903-2.PNG)
+
 (Optional) Configure OS encryption to XTS-AES-256
 
-The option to use AES256 over AES128 is option. Both provide an adequate layer data encryption protection of hard disks when the device is powered off. However, if you are in the goverment sector or in a federally regulated environment you should be using an AES256 suite to protect data. Further guidance can be found at:
+The option to use AES256 over AES128 is optional. Both provide an adequate layer data encryption protection of hard disks when the device is powered off. However, if you are in the goverment sector or in a federally regulated environment you should be using an AES256 suite to protect data. Further guidance can be found at:
 
 https://apps.nsa.gov/iaarchive/programs/iad-initiatives/cnsa-suite.cfm
 
+Encryption options can be set at the following location:
 
+Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAlone1903-4.PNG)
 
 
 
