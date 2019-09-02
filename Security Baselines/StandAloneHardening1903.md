@@ -1,10 +1,8 @@
-# How to Apply Security Baselines to Non-Domain Joined machines running Windows 10 Version 1903 (Experimental. Testing Changes)
+# How to Apply Security Baselines to Non-Domain Joined machines running Windows 10 Version 1903 
 
-## Update. Please hold off on using the existing zip file. I will need to fix a problem with bitlocker trying to contact a domain controller prior to encryption. That won't work since the instructions is for standalone use. 
+1. Download Windows 10 Version 1903 and Windows Server Version 1903 Security Baseline.zip:
 
-1. Download Windows 10 Custom Zip:
-
-   https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Win10%20Custom.zip
+   https://www.microsoft.com/en-us/download/details.aspx?id=55319
    
 2. Extract the contents of the zip file. 
  
@@ -15,7 +13,7 @@
    Set-ExecutionPolicy Unrestricted
    ```
    
-4. Run the following:
+4. Run the following from the Local_Script folder from the zip file you extracted from Step 2:
 
    ```
    .\BaselineLocalInstall.ps1 -Win10NonDomainJoined
@@ -42,27 +40,40 @@
     ```
     The following reference url will explain more about this setting: https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/
     
- ## About Windows 10 Custom Zip File
- 
- This is a customized version of Microsoft Security Compliance toolkit. It contains the following changes.You do not need to manually make these changes as they have already been done when you executed the powershell script from Step 4. 
- 
-Adds Windows Defender Block at first sight: (Enforce the bottom policies. The rest has been set up for you with the powershell script). To get to the local group policy editor type in gpedit.msc in the search bar, command prompt, or run box.
- 
-     In the Group Policy Management Editor, expand the tree to Windows Components > Windows Defender Antivirus > MAPS
-     
-     A. Double-click Join Microsoft MAPS and set to enabled with Advanded MAPS. Click ok.
-     
-     B. Double-click Block at first site and set to enabled. Click ok. 
-     
-     In the Group Policy Management Editor, expand the tree to Windows components > Windows Defender Antivirus > Real-time Protection:
-     
-     A. Double-click Scan all downloaded files and attachments and ensure the option is set to Enabled. Click OK.
-     
-     B. Double-click Turn off real-time protection and ensure the option is set to Disabled. Click OK.
-     
-     Reference URL: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus
+10. Remove PowerShell 2.0 from administrative command prompt window:
+
+```
+Dism /online /Disable-Feature /FeatureName:"MicrosoftWindowsPowerShellV2Root"
+```
+
+11. Bitlocker Security
+
+By default bitlocker is configured with XTS-AES-128 encryption and preboot authentication is left off by default. Its highly recommended that you turn on preboot authentication. Preboot authentication is explained in the following document for bitlocker countermeasures:
+
+https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures
+
+Preboot authentication can be turned on in the following location for your operating system.
+
+Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption\Operating System Drives\Require Additional Authentication at startup
+
+(Optional) Configure OS encryption to XTS-AES-256
+
+The option to use AES256 over AES128 is option. Both provide an adequate layer data encryption protection of hard disks when the device is powered off. However, if you are in the goverment sector or in a federally regulated environment you should be using an AES256 suite to protect data. Further guidance can be found at:
+
+https://apps.nsa.gov/iaarchive/programs/iad-initiatives/cnsa-suite.cfm
+
+
+
+
+
+
+ ## About Windows 10 References
+
+Windows 10 Block at First sight
     
-Bitlocker Encryption Policy changes. Mandates the use of XTS-AES-256 for encryption of the operating system drive. Mandates CBC-AES-256 for removable media encryption. OS encryption type is used space only. Removable media encryption type is full disk encryption. 
+Reference URL: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus
+    
+ 
      
 
  
