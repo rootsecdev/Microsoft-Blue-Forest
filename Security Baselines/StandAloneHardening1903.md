@@ -76,12 +76,12 @@ Computer Configuration\Administrative Templates\Windows Components\Bitlocker Dri
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAlone1903-4.PNG)
 
+At this point right click on your C (OS Drive) and turn on bitlocker
 
 
+ ## Windows 10 References and Post hardening checklist
 
- ## About Windows 10 References
-
-Windows 10 Block at First sight
+Ensure Windows 10 Block at First sight is turned on
     
 Reference URL: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus
     
