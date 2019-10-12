@@ -8,7 +8,7 @@ A Blue Forest is centered around Blue Team operational security in domain networ
 ## What Operating Systems are included in this repository of documentation?
 - Microsoft Windows Server 2016
 - Microsoft Windows Server 2019
-- Windows 10 Enterprise RS5 (1809)
+- Windows 10 Enterprise (1903)
 
 ## What type of information can I find in this repository?
 - Setting up domain controllers
