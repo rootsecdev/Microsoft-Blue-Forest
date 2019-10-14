@@ -1,1 +1,1 @@
-Collection of Scripts for Blue Forest.
+Collection of Domain Controller Scripts for the Blue Forest.
