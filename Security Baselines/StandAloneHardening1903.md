@@ -4,6 +4,13 @@
 
    https://www.microsoft.com/en-us/download/details.aspx?id=55319
    
+1a. Also download LGPO.zip from the Security compliance toolkit from the URL above and extract the LGPO.exe file to:
+    Windows 10 Version 1903 and Windows Server Version 1903 Security Baseline\Local_Script\Tools
+    
+    or if running the Sept 2019 re-release of Windows 10 1903:
+    
+   Windows 10 Version 1903 and Windows Server Version 1903 Security Baseline - Sept2019Update\Scripts\Tools
+   
 2. Extract the contents of the zip file. 
  
 
@@ -18,6 +25,12 @@
    ```
    .\BaselineLocalInstall.ps1 -Win10NonDomainJoined
    ```
+   If you extracted the September 2019 GPO baseline then run the following in Windows 10 Version 1903 and Windows Server Version 1903    Security Baseline - Sept2019Update\Scripts:
+   
+   ```
+   .\Baseline-LocalInstall.ps1 -Win10NonDomainJoined
+   ```
+   
 
      
    ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-2.PNG)
