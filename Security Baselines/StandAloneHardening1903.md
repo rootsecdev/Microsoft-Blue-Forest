@@ -91,6 +91,63 @@ Computer Configuration\Administrative Templates\Windows Components\Bitlocker Dri
 
 At this point right click on your C (OS Drive) and turn on bitlocker
 
+## Office 365 Security
+
+The following can be used in conjuction with Windows 10 hardening. It is extremely important to have adequate Microsoft Office security protections enabled as they can be a frequent for hackers. For Example DDE attacks https://www.sentinelone.com/blog/malware-embedded-microsoft-office-documents-dde-exploit-macroless/
+
+1. To Start download the Office 365 Pro Plus zip file from the security compliance toolkit
+
+   https://www.microsoft.com/en-us/download/details.aspx?id=55319
+   
+1a. Also download LGPO.zip from the Security compliance toolkit from the URL above and extract the LGPO.exe file to:
+    Windows 10 Version 1903 and Windows Server Version 1903 Security Baseline\Local_Script\Tools
+
+2. Download the Office 365 admin templates from the following link: (Hint: 64 bit is the default install now for Office in unmanaged environments)
+
+   https://www.microsoft.com/en-us/download/details.aspx?id=49030
+   
+3. Extact the Office 365 templates to a directory of your chosing. For my example I put it in a c:\temp directory called "C:\temp\Office365 Templates\"
+
+4. Copy the ADMX files from my example above from the following locations:
+   
+   From: C:\temp\Office365 Templates\admx
+   
+   To: C:\Windows\PolicyDefinitions
+   
+5. Copy the ADML files from my example about to the following locations:
+
+   From: C:\temp\Office365 Templates\admx\en-us
+   
+   To: C:\Windows\PolicyDefinitions\en-US
+   
+ 6. Exact the Office 365 zip file from the security compliance toolkit to c:\temp\
+ 
+ 7. Navigate to the following folder in a elevated powershell session:
+    
+    C:\temp\Office365-ProPlus-Sept2019-FINAL\Scripts
+    
+ 8. Open Powershell in administrative mode and temporarily set the execution policy of powershell to unrestricted with the following    code:
+
+   ```
+   Set-ExecutionPolicy Unrestricted
+   ``` 
+ 
+ 9. Run the following powerhsell command as shown:
+ 
+   ```
+   .\Baseline-LocalInstall.ps1 
+   ```
+   
+   The following switches are supported if you don't want to install certain Office 365 hardening techniques:
+   
+   -NoRequiredMacroSigning - Doesn't install the GPO that disallows execution of unsigned macros.
+                             If this switch is not specified, unsigned macros will not execute.
+
+   -NoLegacyFileBlock      - Doesn't install the GPO that disallows the loading or saving of
+                             legacy file formats, such as .doc, .dot, .xls, etc.
+
+   -NoExcelDDEBlock        - Doesn't install the GPO that blocks Excel from performing DDE
+                             lookup or launch.
 
  ## Windows 10 References and Post hardening checklist
 
