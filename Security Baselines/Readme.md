@@ -18,7 +18,7 @@ https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows
 
 **Microsoft Security Guidance Blog**
 
-https://blogs.technet.microsoft.com/secguide/
+https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/bg-p/Microsoft-Security-Baselines
 
 **CIS Security Baselines**
 
