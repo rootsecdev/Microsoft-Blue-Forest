@@ -60,7 +60,7 @@ REM https://support.microsoft.com/en-us/help/4034879/how-to-add-the-ldapenforcec
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters" /v LdapEnforceChannelBinding /t REG_DWORD /d 2 /f
 
 ```
-###Intel Microcode Update###
+*Intel Microcode Update*
 
 Depending on your version of intel processor you may need a Microcode Update
 
