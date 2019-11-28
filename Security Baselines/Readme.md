@@ -68,3 +68,12 @@ Refrence Link: https://support.microsoft.com/en-ca/help/4494175/kb4494175-intel-
 
 Download: http://www.catalog.update.microsoft.com/Search.aspx?q=KB4494175
 
+*Group Policy Central Store*
+
+The following URL is instructions on how to create a group policy central store. I highly recommend creating a central store to get a consitent group policy experience when editing or modifying existing group policies. 
+
+https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra
+
+At the time of this writing Windows 10 1909 templates have not been published (11/27/19). Simply boot a Windows 10 V 1909 machine and copy the following area:
+
+**C:\Windows\PolicyDefinitions** to **\\\Your Domain\SYSVOL\contoso.com\policies\PolicyDefinitions**
