@@ -85,3 +85,43 @@ Example below:
 Also copy the following templates from the Windows 10 1909 baseline to the group policy central store. Make sure to store the adml files in the "en-us" folder
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-3.PNG)
+
+*Disable SMB1*
+
+URL Reference: https://support.microsoft.com/en-us/help/2696547/detect-enable-disable-smbv1-smbv2-smbv3-in-windows-and-windows-server
+
+By default SMB1 is enabled in Server 2016.
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-4.PNG)
+
+To disable through group policy:
+
+Navigate to "Computer Configuration\Policies\Administrative Templates\MS Security Guide"
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-5.PNG)
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-6.PNG)
+
+Reboot is required for changes to take effect. 
+
+*Disable Netbios and LLMNR**
+
+These two protocols are legacy and if left on can disclose credential hashes to domain accounts if an attacker is insider your network. To remove this vulnerability it is recommended to remove. I've safely removed on environments running Windows7/2008 R2 and above without any issues. 
+
+Navigate to "Computer Configuration\Policies\Administrative Templates\MS Security Guide"
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-7.PNG)
+
+Navigate to "Computer Configuration\Policies\Administrative Templates\Network\DNS Client"
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-8.PNG)
+
+*RDP CredSSP*
+
+It is suggested that RDP not be enabled on domain controllers. Regardless if enabled or not Oracle Remediation should be enabled and set to "Forced Mitigated" 
+
+Navigate to "Computer Configuration\Policies\Administrative Templates\System\Credentials Delegation"
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-9.PNG)
+
+
