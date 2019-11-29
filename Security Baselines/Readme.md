@@ -51,7 +51,7 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Mem
 
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f
 
-REM f the Hyper-V feature is installed, add the following registry setting:
+REM If the Hyper-V feature is installed, add the following registry setting:
 
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization" /v MinVmVersionForCpuBasedMitigations /t REG_SZ /d "1.0" /f
 
@@ -77,3 +77,11 @@ https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-ce
 At the time of this writing Windows 10 1909 templates have not been published (11/27/19). Simply boot a Windows 10 V 1909 machine and copy the following area:
 
 **C:\Windows\PolicyDefinitions** to **\\\Your Domain\SYSVOL\contoso.com\policies\PolicyDefinitions**
+
+Example below:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-2.PNG)
+
+Also copy the following templates from the Windows 10 1909 baseline to the group policy central store. Make sure to store the adml files in the "en-us" folder
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/Screenshots/Server2016-3.PNG)
