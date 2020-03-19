@@ -2,6 +2,14 @@
 
 This section focuses on Just Enough Administration to limit administration rights on Windows Server 2012 R2 and above. Doucmentation is currently incomplete but should be done in the next day or so (3.19.20 Time of edit)
 
+## Preqrequisites
+
+Powershell Version 5.1
+
+https://www.microsoft.com/en-us/download/details.aspx?id=54616
+
+Notes: At this time I have not tested JEA functionality with Powershell 7. I will probably get to that at some point. 
+
 ## Instructions
 
 1. Open up Powershell ISE as Administrator
