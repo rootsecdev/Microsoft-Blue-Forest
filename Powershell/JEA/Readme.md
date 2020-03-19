@@ -1,0 +1,46 @@
+# Just Enough Administration
+
+This section focuses on Just Enough Administration to limit administration rights on Windows Server 2012 R2 and above. Doucmentation is currently incomplete but should be done in the next day or so (3.19.20 Time of edit)
+
+## Instructions
+
+1. Open up Powershell ISE as Administrator
+
+2. In your PowerShell Window please make sure you are operating at the root of c:\
+
+3. In the ISE code windows copy the following powershell code:
+
+```
+# Create a JEA Directory
+
+New-Item -Path JEA -ItemType Directory
+
+New-Item -Path .\JEA\JEA.psm1
+
+New-ModuleManifest -Path .\JEA\JEA.psd1 -RootModule JEA.psm1
+
+New-Item -Path .\JEA\RoleCapabilities -ItemType Directory
+
+New-PSRoleCapabilityFile -Path .\JEA\RoleCapabilities\JEARole.psrc
+
+New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\JEA\JEA.pssc
+
+# Only do test configuration file when done with JEA config
+
+Test-PSSessionConfigurationFile -Path .\JEA\JEA.pssc
+```
+
+4. Edit the "pssc" file or in this case C:\JEA\JEA.pssc. We will create a Role Definition defined with a security group and will reference the RoleCapabilities file "JEARole"
+
+<Insert Screenshot>
+
+```
+RoleDefinitions = @{ 'lab\JEAAdmins' =@{ RoleCapabilities = 'JEARole' }; }
+```
+
+## Resources
+
+Just Enough Administration Overview
+
+https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview?view=powershell-7
+
