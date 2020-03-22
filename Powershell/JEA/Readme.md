@@ -8,7 +8,7 @@ Powershell Version 5.1
 
 https://www.microsoft.com/en-us/download/details.aspx?id=54616
 
-Notes: At this time I have not tested JEA functionality with Powershell 7. I will probably get to that at some point. 
+Notes: At this time I have not tested JEA functionality with Powershell 7. I will probably get to that at some point. In the instructions below you can do on a Windows 10 Client machine. The purpose is to setup a powershell module first then deploy the JEA configuration to a target endpoint.
 
 ## Instructions
 
@@ -19,7 +19,7 @@ Notes: At this time I have not tested JEA functionality with Powershell 7. I wil
 3. In the ISE code windows copy the following powershell code:
 
 ```
-# Create a JEA Directory
+# Create a JEA Directory and module setup
 
 New-Item -Path JEA -ItemType Directory
 
@@ -52,3 +52,6 @@ Just Enough Administration Overview
 
 https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview?view=powershell-7
 
+Just Enough Administration Techsnip
+
+https://www.youtube.com/watch?v=hblqUUOykeo
