@@ -38,12 +38,26 @@ New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\JEA\J
 Test-PSSessionConfigurationFile -Path .\JEA\JEA.pssc
 ```
 
-4. Edit the "pssc" file or in this case C:\JEA\JEA.pssc. We will create a Role Definition defined with a security group and will reference the RoleCapabilities file "JEARole"
-
-<Insert Screenshot>
+4. Edit the "pssc" file or in this case C:\JEA\JEA.pssc. We will create a Role Definition defined with a security group and will reference the RoleCapabilities file "JEARole". In this example I've created a JEA_IIS security group. It's purpose will give a normal user with no administrative rights the ability to restart IIS services. 
 
 ```
-RoleDefinitions = @{ 'lab\JEAAdmins' =@{ RoleCapabilities = 'JEARole' }; }
+RoleDefinitions = @{ 'LAB\JEA_IIS' = @{ RoleCapabilities = 'JEARoles' }; }
+```
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA1.PNG)
+
+5. Next make sure you uncomment the line "Whether to run this session configuration as the machine's (virtual) administrator account"
+
+Before:
+
+```
+#RunAsVirtualAccount = $true
+```
+
+After:
+
+```
+RunAsVirtualAccount = $true
 ```
 
 ## Resources
