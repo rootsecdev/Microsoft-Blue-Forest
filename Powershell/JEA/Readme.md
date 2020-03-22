@@ -44,6 +44,8 @@ Test-PSSessionConfigurationFile -Path .\JEA\JEA.pssc
 RoleDefinitions = @{ 'LAB\JEA_IIS' = @{ RoleCapabilities = 'JEARoles' }; }
 ```
 
+When you get done editing this is how it should look.
+
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA1.PNG)
 
 5. Next make sure you uncomment the line "Whether to run this session configuration as the machine's (virtual) administrator account"
@@ -58,6 +60,15 @@ After:
 
 ```
 RunAsVirtualAccount = $true
+```
+
+6. Next edit the JEARole.psrc file. We will edit this file with commandlets that people in our security group will be allowed to run. In the Visible Commandlets section we will add the following. This will give members that ability to specifically restart IIS services and run certain get commands to check service statuses and inventory start up modes on services. I'll explain later in subsequent steps. 
+
+```
+VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; ValidateSet = 'W3SVC' }},
+                 'Get-Service',
+                 'Get-CimInstance',
+                 'Format-Table'
 ```
 
 ## Resources
