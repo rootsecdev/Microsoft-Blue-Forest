@@ -124,6 +124,12 @@ You should have Full Control of all operations with the role profile.
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA6.PNG)
 
+## Tips
+
+- Do not give people full command rights such as restart-service, or Set commands. Be specific with validate set commands you want people to have access to. 
+
+- Giving full access rights to things like Get-Service is fine as you see from step 6. 
+
 ## Resources
 
 Just Enough Administration Overview
