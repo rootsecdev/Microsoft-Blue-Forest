@@ -1,6 +1,6 @@
 # Just Enough Administration
 
-This section focuses on Just Enough Administration to limit administration rights on Windows Server 2012 R2 and above. Doucmentation is currently incomplete but should be done in the next day or so (3.19.20 Time of edit)
+This section focuses on Just Enough Administration to limit administration rights on Windows Server 2012 R2 and above. 
 
 ## Preqrequisites
 
