@@ -116,9 +116,13 @@ Set-PSSessionConfiguration JEA -ShowSecurityDescriptorUI
 
 You should have Full Control of all operations with the role profile.
 
-9. At this point you should be able to enter a PowerShell Remote session as a non-administrator:
+9. At this point you should be able to enter a PowerShell Remote session as a non-administrator and perform one of the commands you allowed in your PSRC role file from Step 6:
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA5.PNG)
+
+10. If you try and restart a service you have not defined in the role file or not allowed you will get the following error because you aren't allowed access to restart the service: 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA6.PNG)
 
 ## Resources
 
