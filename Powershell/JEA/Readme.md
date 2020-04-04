@@ -29,7 +29,7 @@ New-ModuleManifest -Path .\JEA\JEA.psd1 -RootModule JEA.psm1
 
 New-Item -Path .\JEA\RoleCapabilities -ItemType Directory
 
-New-PSRoleCapabilityFile -Path .\JEA\RoleCapabilities\JEARole.psrc
+New-PSRoleCapabilityFile -Path .\JEA\RoleCapabilities\JEARoles.psrc
 
 New-PSSessionConfigurationFile -SessionType RestrictedRemoteServer -Path .\JEA\JEA.pssc
 
@@ -70,6 +70,55 @@ VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; Val
                  'Get-CimInstance',
                  'Format-Table'
 ```
+
+7. This step involves setting up the JEA enpoint. You can do this a few different ways. Copy the JEA folder directly to "C:\Program Files\WindowsPowerShell\Modules" or do it remotely through a Remote PS Session. This code will show how to do through a remote PS Session. This assumes the target server is named "2012VM1"
+
+```
+# Open a session to server
+
+$session = New PSSession 2012VM1
+
+# Copy the modules to the folder on the remote server. In your powershell session make sure you are operating out of the folder where the JEA module is located
+
+Copy-Item -Path .\JEA -Destination 'C:\Program Files\WindowsPowerShell\Modules' -Recurse -ToSession $session -Force
+
+# Copy the Session Configuration file to the C:\ drive on the remote server
+
+Copy-Item -Path .\JEA.pssc -Destination c:\ -ToSession $session -Force
+
+# Register the new PowerShell endpoint on the remote server using the session configuration file
+
+Invoke-Command -Session $session -ScriptBlock {Register-PSSessionConfiguration -Path C:\JEA.pssc -Name 'JEA' -Force}
+
+# Register the new Powershell endpoint locally if you don't want to do over a remote session
+
+Invoke-Command -ScriptBlock {Register-PSSessionConfiguration -Path C:\JEA.pssc -Name 'JEA' -Force}
+
+# Verify Session Configuration 
+Get-PSSessionConfiguration
+
+```
+Here is an example of what you should see when you invoke the JEA configuration:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA2.PNG)
+
+Here is an example of what you should see when you check on the PS Session Configuration:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA4.PNG)
+
+8. Check the PS Session Cofiguration security descriptor by doing the following:
+
+```
+Set-PSSessionConfiguration JEA -ShowSecurityDescriptorUI
+```
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA3.PNG)
+
+You should have Full Control of all operations with the role profile.
+
+9. At this point you should be able to enter a PowerShell Remote session as a non-administrator:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Screenshots/JEA5.PNG)
 
 ## Resources
 
