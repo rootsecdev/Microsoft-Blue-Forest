@@ -45,5 +45,5 @@ Plus More to be added over time!
 
 6. [Windows 10 Non Domain Joined Security Hardening](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Security%20Baselines/StandAloneHardening1903.md)
 
-
+7. [Just Enough Administration and Deployment](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Powershell/JEA/Readme.md)
 
