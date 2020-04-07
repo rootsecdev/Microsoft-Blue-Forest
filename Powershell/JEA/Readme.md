@@ -71,6 +71,15 @@ VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; Val
                  'Format-Table'
 ```
 
+6a. If you want to run multiple commandlets with specific validated sets then use this example:
+
+```
+VisibleCmdlets = @{ Name = 'Restart-Service'; Parameters = @{ Name = 'Name'; ValidateSet = 'W3SVC' }},
+                 @{ Name = 'Stop-Service'; Parameters = @{ Name = 'Name'; ValidateSet = 'W3SVC' }},
+                 'Get-Service',
+                 'Get-CimInstance',
+                 'Format-Table'
+```
 7. This step involves setting up the JEA enpoint. You can do this a few different ways. Copy the JEA folder directly to "C:\Program Files\WindowsPowerShell\Modules" or do it remotely through a Remote PS Session. This code will show how to do through a remote PS Session. This assumes the target server is named "2012VM1"
 
 ```
