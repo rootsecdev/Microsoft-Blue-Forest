@@ -8,7 +8,7 @@ Notes: I will update this post when this gets out of Draft status.
   
 2. Extract the contents of the zip file. 
 
-2a. Download LGPO.zip from the Security compliance toolkit:
+3. Download LGPO.zip from the Security compliance toolkit:
    
    https://www.microsoft.com/en-us/download/details.aspx?id=55319
     
@@ -16,13 +16,13 @@ Notes: I will update this post when this gets out of Draft status.
    
    Windows-10-Windows Server-v2004-Security-Baseline-DRAFT\Scripts\Tools
 
-3. Open Powershell in administrative mode and temporarily set the execution policy of powershell to unrestricted with the following code:
+4. Open Powershell in administrative mode and temporarily set the execution policy of powershell to unrestricted with the following code:
 
    ```
    Set-ExecutionPolicy Unrestricted
    ```
    
-4. Run the following from the Local_Script folder from the zip file you extracted from Step 2:
+5. Run the following from the Local_Script folder from the zip file you extracted from Step 2:
 
    ```
    .\Baseline-LocalInstall.ps1 -Win10NonDomainJoined
