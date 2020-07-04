@@ -32,7 +32,7 @@ Notes: I will update this post when this gets out of Draft status.
    
 6. At this point the following baselines referenced below will automatically install:
  
-   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening1903-3.PNG)
+   ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/StandAloneHardening2004-2.PNG)
    
 7. Set execution policy back to restricted mode
   
