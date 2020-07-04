@@ -54,6 +54,18 @@ Notes: I will update this post when this gets out of Draft status.
 Dism /online /Disable-Feature /FeatureName:"MicrosoftWindowsPowerShellV2Root"
 ```
 
+## Microsoft Edge Chromium Security
+
+1. To Download Microsoft Edge, including the latest channel version and policy files. Go to the following link:
+
+   https://www.microsoft.com/en-us/edge/business/download
+   
+2. Place the policy files in C:\Windows\PolicyDefinitions
+
+   - ADMX files go in C:\Windows\PolicyDefinitions
+   
+   - ADML files go in C:\Windows\PolicyDefinitions\en-US
+
 ## Bitlocker Security
 
 By default bitlocker is configured with XTS-AES-128 encryption and preboot authentication is left off by default. Its highly recommended that you turn on preboot authentication. Preboot authentication is explained in the following document for bitlocker countermeasures:
