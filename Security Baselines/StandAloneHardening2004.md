@@ -172,6 +172,18 @@ The following can be used in conjuction with Windows 10 hardening. It is extreme
  
  https://support.microsoft.com/en-us/help/4027945/windows-change-privacy-settings-in-windows-10
  
+ Microsoft also offers a Windows Restricted Traffic Limited Functionality Baseline package if privacy is your focus then you should download the restricted baseline package instead of the security hardening instruction mentioned earlier in this documentation. The following link contains the restircted baseline package:
+ 
+ https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
+ 
+ The direct URL to download the Windows Restricted Traffic Limited Functionlity Baseline:
+ 
+ https://go.microsoft.com/fwlink/?linkid=828887
+ 
+ Once you Extract the ZIP file you can run the CMD file as seen in the screenshot below. Make sure you put LGPO.exe in WindowsRTLFB\Version 2004\Enterprise\Tools:
+ 
+ ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/RTLFB-1.PNG)
+ 
  ## Windows 10 References and Post hardening checklist
 
 Ensure Windows 10 Block at First sight is turned on
