@@ -65,6 +65,16 @@ Dism /online /Disable-Feature /FeatureName:"MicrosoftWindowsPowerShellV2Root"
    - ADMX files go in C:\Windows\PolicyDefinitions
    
    - ADML files go in C:\Windows\PolicyDefinitions\en-US
+   
+3. Microsoft Edge Security baselines can be downloaded from the Microsoft Security Compliance toolkit:
+
+   https://www.microsoft.com/en-us/download/details.aspx?id=55319
+   
+4. You will need to manually open gpedit.msc (Group Policy Editor) and set the following policies for Microsoft Edge:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/MSEdge-1.PNG)
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/MSEdge-2.PNG)
 
 ## Bitlocker Security
 
@@ -100,7 +110,7 @@ At this point right click on your C (OS Drive) and turn on bitlocker
 
 ## Office 365 Security
 
-The following can be used in conjuction with Windows 10 hardening. It is extremely important to have adequate Microsoft Office security protections enabled as they can be a frequent for hackers. For Example DDE attacks https://www.sentinelone.com/blog/malware-embedded-microsoft-office-documents-dde-exploit-macroless/
+The following can be used in conjuction with Windows 10 hardening. It is extremely important to have adequate Microsoft Office security protections enabled as they can be a frequent attack vector for hackers. For Example DDE attacks https://www.sentinelone.com/blog/malware-embedded-microsoft-office-documents-dde-exploit-macroless/
 
 1. To Start download the Office 365 Pro Plus zip file from the security compliance toolkit
 
@@ -156,6 +166,12 @@ The following can be used in conjuction with Windows 10 hardening. It is extreme
    -NoExcelDDEBlock        - Doesn't install the GPO that blocks Excel from performing DDE
                              lookup or launch.
 
+ ## Privacy Focused settings
+ 
+ Its important to review the privacy settings on your Windows 10 OS. Microsoft has done a excellent job at putting all privacy focuses settings into a single area for ready review.You can review your privacy settings in the following link for reference:
+ 
+ https://support.microsoft.com/en-us/help/4027945/windows-change-privacy-settings-in-windows-10
+ 
  ## Windows 10 References and Post hardening checklist
 
 Ensure Windows 10 Block at First sight is turned on
