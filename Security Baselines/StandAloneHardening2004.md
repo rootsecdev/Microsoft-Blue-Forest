@@ -189,6 +189,14 @@ The following can be used in conjuction with Windows 10 hardening. It is extreme
 Ensure Windows 10 Block at First sight is turned on
     
 Reference URL: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus
+
+What about Speculative execution CPU vulnerabilities as referenced in this URL where you have to manually inject registry keys?
+
+https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in
+
+This appears to not be needed. See screenshot below on running powershell to get speculative control settings:
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Screenshots/SpecControl-1.PNG)
     
  
      
