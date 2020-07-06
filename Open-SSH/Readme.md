@@ -49,3 +49,9 @@ Only allow access via Active Directory Security Group. In this example access is
 3.	Modify the ssh firewall rule for remote connections to only accept traffic over SFTP via Port 22 to subnets that need access an example is below:
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Open-SSH/Screenshots/OpenSSH-4.PNG)
+
+## References
+
+Installation of OpenSSH For Windows Server 2019 and Windows 10
+
+https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
