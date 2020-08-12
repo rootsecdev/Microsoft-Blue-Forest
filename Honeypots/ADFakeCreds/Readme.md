@@ -85,3 +85,13 @@ I can take no credit for this as this was copied from the Emipire project. (http
 This script was taken from a stealth bits article that was written some time ago. I slightly modified mine so I would have a static account but a randomly generated password. You can mix and match this script with whatever you like. The article goes into detail on how to make random service accounts which would be useful for server based OS's. 
 
 (https://blog.stealthbits.com/deploying-pass-the-hash-honeypots/)
+
+**Post Deployment**
+
+Here is an example of how things look from an attacker standpoint in mimikatz. After flowing through these steps I used mimikatz in my lab to confirm this process is working and injecting the credentials into memory as intended. I will place emphasis on my lab environment. Get permission from your information security or risk department if you have a need to test this on a production network. I highly recommend to do this in a lab environment to vet out in issues in a safe and secure way. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Honeypots/Screenshots/Mimikatz.PNG)
+
+Also please take note if you go to task scheduler you will see the Honey hash task continuing to run. This is as designed because the task has to continue to run for the credentials to remain in memory. Also from my initial batch script you will noticed that the Create=HoneyHash.ps1 file is executed with -windowstyle hidden. This is so your end users don't see messages that the creds were injected into memory and you definitely do not want them to download mimikatz to confirm. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Honeypots/Screenshots/Task1.PNG)
