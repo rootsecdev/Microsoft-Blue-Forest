@@ -79,3 +79,9 @@ SchTasks /Create /SC ONLOGON /TN "HoneyHash User Scheduled Task" /TR "\"powershe
 **2. New-Honeyhash.psm1**
 
 I can take no credit for this as this was copied from the Emipire project. (https://github.com/EmpireProject/Empire/blob/master/data/module_source/management/New-HoneyHash.ps1). You can download my file or head over to the Empire Project and download it from there. Its very important that this file gets saved as a psm1 file and not a ps1 file. This needs to act as a powershell function so you can invoke New-Honeyhash correctly from powershell without having to call more scripts. 
+
+**3. CreateHoneyHash.ps1**
+
+This script was taken from a stealth bits article that was written some time ago. I slightly modified mine so I would have a static account but a randomly generated password. You can mix and match this script with whatever you like. The article goes into detail on how to make random service accounts which would be useful for server based OS's. 
+
+(https://blog.stealthbits.com/deploying-pass-the-hash-honeypots/)
