@@ -73,7 +73,7 @@ copy \\Your Domain\NETLOGON\Honey-Hash\CreateHoneyHash.ps1 "C:\Program Files\Win
 powershell.exe Import-Module New-HoneyHash
 
 :Execute
-SchTasks /Create /SC ONLOGON /TN "HoneyHash User Scheduled Task" /TR "\"powershell.exe\" -windowstyle hidden -NoExit -File 'C:\Program Files\WindowsPowerShell\Modules\New-HoneyHash\CreateHoneyHash.ps1'
+SchTasks /Create /SC ONLOGON /ru /TN "HoneyHash User Scheduled Task" /TR "\"powershell.exe\" -windowstyle hidden -NoExit -File 'C:\Program Files\WindowsPowerShell\Modules\New-HoneyHash\CreateHoneyHash.ps1'
 ```
 
 **2. New-Honeyhash.psm1**
