@@ -2,9 +2,9 @@
 
 Notes: I will update this post when this gets out of Draft status.
 
-1. Download Windows-10-Windows Server-v2004-Security-Baseline-DRAFT.zip:
+1. Download Windows 10 Version 2004 and Windows Server Version 2004 Security Baseline.zip:
 
-   https://techcommunity.microsoft.com/gxcuf89792/attachments/gxcuf89792/Microsoft-Security-Baselines/138/1/Windows-10-Windows%20Server-v2004-Security-Baseline-DRAFT.zip   
+   https://www.microsoft.com/en-us/download/details.aspx?id=55319  
   
 2. Extract the contents of the zip file. 
 
