@@ -2,7 +2,7 @@
 
 ## Notes: 
 
-These are registry key remediation techniques to remove certain vulnerabilities from IIS webservers. These techniques were tested on a 2012 R2 servers as they contain some severe out of the box vulnerabilities when enabling IIS. 
+These are registry key remediation techniques to remove certain vulnerabilities from IIS webservers. These techniques were tested on a 2012 R2 servers as they contain some severe out of the box vulnerabilities when enabling IIS. Please test these techniques in a non production environment prior to implementing on production workloads. 
 
 ### Disable SSL3
 
