@@ -71,4 +71,26 @@ These are registry key remediation techniques to remove certain vulnerabilities 
 "Enabled"=dword:00000000
 ```
 
+### Fixing .net schannel issues after disabling TLS 1.0
+
+URL Reference: https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+```
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+```
 ### Scanning and enumeration techniques with NMAP (End Result)
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/Web%20Server%20Security/Screenshots/SSL%20ENUM.PNG)
