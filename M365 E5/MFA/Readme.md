@@ -70,7 +70,7 @@ Tips
 
 - Do not roll out your entire organization at once. This will drive up help desk calls. I found it is best to roll out in Alphabetical order. 
 - Use MFA list that you generated earlier in this documentation
-- Use the following URL in your communication https://mysighnins.microsoft.com/security-info
+- Use the following URL in your communication https://mysignins.microsoft.com/security-info
 
 
 
