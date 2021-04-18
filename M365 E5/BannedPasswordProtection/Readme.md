@@ -32,3 +32,28 @@ Software Pre-Requisites:
 
 ![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/M365%20E5/BannedPasswordProtection/Screenshots/BanPwd1.PNG)
 
+On Proxy Server:
+
+Import Azure AD Password Protection Modules
+
+```
+Import-Module AzureADPasswordProtection
+```
+
+Check and make sure Azure AD Password Protection proxy service is running on your servers
+
+```
+Get-Service AzureADPasswordProtectionProxy | fl
+```
+
+Register your Azure AD proxies using interactive mode. This worked best for me and since my GA account has MFA turned on. 
+
+```
+Register-AzureADPasswordProtectionProxy -AccountUpn 'yourglobaladmin@yourtenant.onmicrosoft.com'
+```
+
+Register your Azure AD forest. 
+
+```
+Register-AzureADPasswordProtectionForest -AccountUpn 'yourglobaladmin@yourtenant.onmicrosoft.com'
+```
