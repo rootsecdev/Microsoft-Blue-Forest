@@ -57,3 +57,25 @@ Register your Azure AD forest.
 ```
 Register-AzureADPasswordProtectionForest -AccountUpn 'yourglobaladmin@yourtenant.onmicrosoft.com'
 ```
+
+Here is how to add proxy auth if your Password protection proxy servers are sitting behind a corporate proxy. 
+
+Create a AzureADPasswordProtectionProxy.exe.config file in the %ProgramFiles%\Azure AD Password Protection Proxy\Service folder.
+
+```
+<configuration>
+   <system.net>
+      <defaultProxy enabled="true">
+      <proxy bypassonlocal="true"
+         proxyaddress="http://yourhttpproxy.com:8080" />
+      </defaultProxy>
+   </system.net>
+</configuration>
+```
+
+If your proxy listens to something other than port 8080 then you will need to do this:
+
+```
+Set-AzureADPasswordProtectionProxyConfiguration –StaticPort <portnumber>
+```
+
