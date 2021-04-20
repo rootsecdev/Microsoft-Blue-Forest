@@ -89,3 +89,22 @@ Its highly recommended to do audit mode first so you can gauge your overall pass
 ## Monitoring and Reporting Azure AD Banned Password Protection
 
 URL Reference: https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-ban-bad-on-premises-monitor
+
+Monitoring specific event ID's 
+
+The chart below is handy for specific monitoring. A few FAQ's.
+
+- Why two event ID's? This is due to Microsoft Banned password policies and organization custom list banned password policies. 
+- What is the difference between password change and password set? Think of it this way. An end user will do a password change to their account. The help desk will do a password set to an account. It's important to monitor both because help desk staff can make bad password decisions even if temporary. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/M365%20E5/BannedPasswordProtection/Screenshots/BanPwd3.PNG)
+
+Before you get custom password lists or enforcement modes you can query event ID 30010 this should detect audit failures of password changes that are either present in Microsoft's banned password policy or your own. 
+
+Get a Grid view of failures on multiple domain controllers:
+
+```
+$S = 'DC1' , 'DC2'
+ForEach ($Server in $S) {
+Get-WinEvent -FilterHashtable @{logName='Microsoft-AzureADPasswordProtection-DCAgent/Admin'; id=30010} -ComputerName $Server | Out-GridView }
+```
