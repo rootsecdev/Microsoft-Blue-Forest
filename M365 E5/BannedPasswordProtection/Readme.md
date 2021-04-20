@@ -79,3 +79,13 @@ If your proxy listens to something other than port 8080 then you will need to do
 Set-AzureADPasswordProtectionProxyConfiguration –StaticPort <portnumber>
 ```
 
+## Audit mode vs. Enforcement mode
+
+Its highly recommended to do audit mode first so you can gauge your overall password change health your end users are making. There is a strong tendency to just turn it on. This will drive up confusion and help desk calls because some end users will legitmately not know what they are doing wrong when they are choosing a password that is bad. Below is an example of turning on banned password protection in audit mode once you have your DC agents and proxy servers running. 
+
+![](https://github.com/rootsecdev/Microsoft-Blue-Forest/blob/master/M365%20E5/BannedPasswordProtection/Screenshots/BanPwd2.PNG)
+
+
+## Monitoring and Reporting Azure AD Banned Password Protection
+
+URL Reference: https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-ban-bad-on-premises-monitor
