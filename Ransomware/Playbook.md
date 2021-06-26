@@ -14,6 +14,11 @@ URL: https://www.cisa.gov/publication/ransomware-guide
 
 URL: https://www.fireeye.com/company/events/mandiant-ransomware-series.html
 
+**Microsoft Human Operated Ransomware Guidance**
+
+URL: https://docs.microsoft.com/en-us/security/compass/human-operated-ransomware
+
+
 **List of protection techniques**
 - Use Microsoft LAPS for local admin password rotation
 - Limit Administrative rights given to workstations
@@ -22,3 +27,4 @@ URL: https://www.fireeye.com/company/events/mandiant-ransomware-series.html
 - Protect Lateral movement by banning your most sensitive accounts from logging into workstations, member servers. (Ex. Domain Admins, Enterprise Admins)
 - Inplement Windows Defender Attack Surface Reduction even if you are running another thrid party antivirus. Allow ASR to work along side with defender. Works on Windows 10 Pro and above. 
 - Lower the attack surface of your domain controllers by using server core only. 
+
