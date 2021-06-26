@@ -1,6 +1,6 @@
 # Ransomware playbook and references
 
-Notes: This area is for various ransomeware and containment strategies I have come across and is useful in allow orgs to assess weaknesses in the current network security hardening environment.
+Notes: This area is for various ransomeware and containment strategies I have come across and is useful in allowing orgs to assess weaknesses in the current network security hardening environment.
 
 **Ransomware Protection and Containment Strategies**
 
