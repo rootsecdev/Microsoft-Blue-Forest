@@ -124,59 +124,59 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
 -	create App Registration
 
-    Docs: Create an Azure AD app and service principal in the portal - Microsoft identity platform | Microsoft Docs
+    Docs: [Create an Azure AD app and service principal in the portal - Microsoft identity platform | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
 
-    Docs: Quickstart: Register an app in the Microsoft identity platform | Microsoft Docs
+    Docs: [Quickstart: Register an app in the Microsoft identity platform | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)
 
 -	configure App Registration permission scopes
 
-    Docs: Microsoft identity platform scopes, permissions, & consent | Microsoft Docs
+    Docs: [Microsoft identity platform scopes, permissions, & consent | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent)
 
 -	manage App Registration permission consent
 
-    Docs: Microsoft identity platform scopes, permissions, & consent | Microsoft Docs
+    Docs: [Microsoft identity platform scopes, permissions, & consent | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent)
 
 -	manage API access to Azure subscriptions and resources
 
-    Docs: Microsoft identity platform authentication flows & app scenarios | Microsoft Docs
+    Docs: [Microsoft identity platform authentication flows & app scenarios | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios)
 
-    Docs: Assign Azure roles using the REST API - Azure RBAC | Microsoft Docs
+    Docs: [Assign Azure roles using the REST API - Azure RBAC | Microsoft Docs](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-rest)
  
 ### Manage access control
 
 -	configure subscription and resource permissions
 
-    Docs: What is Azure role-based access control (Azure RBAC)? | Microsoft Docs
+    Docs: [What is Azure role-based access control (Azure RBAC)? | Microsoft Docs](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
 
-    Docs: Tutorial: Grant a user access to Azure resources using the Azure portal - Azure RBAC | Microsoft Docs
+    Docs: [Tutorial: Grant a user access to Azure resources using the Azure portal - Azure RBAC | Microsoft Docs](https://docs.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal)
 
 -	configure resource group permissions
 
-    Docs: Manage resource groups - Azure portal - Azure Resource Manager | Microsoft Docs
+    Docs: [Manage resource groups - Azure portal - Azure Resource Manager | Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 
 -	configure custom RBAC roles
 
-    Docs: Azure custom roles - Azure RBAC | Microsoft Docs
+    Docs: [Azure custom roles - Azure RBAC | Microsoft Docs](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles)
 
 -	identify the appropriate role
 
-    Docs: Azure identity & access security best practices | Microsoft Docs
+    Docs: [Azure identity & access security best practices | Microsoft Docs](https://docs.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices)
 
-    Docs: List Azure role definitions - Azure RBAC | Microsoft Docs
+    Docs: [List Azure role definitions - Azure RBAC | Microsoft Docs](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-definitions-list?tabs=roles)
 
 -	apply principle of least privilege
 
-    Docs: Azure identity & access security best practices | Microsoft Docs
+    Docs: [Best practices for Azure AD roles](https://docs.microsoft.com/en-us/azure/active-directory/roles/best-practices)
+    
+    Docs: [Administrator roles by admin task in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/roles/delegate-by-task)
 
 -	interpret permissions
   
-    Docs: List Azure role assignments using the Azure portal - Azure RBAC | Microsoft Docs
-
-    Docs: Delegate roles by admin task - Azure Active Directory | Microsoft Docs
+    Docs: [List Azure role assignments using the Azure portal - Azure RBAC | Microsoft Docs](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal)
 
 -	check access
 
-    Docs: Quickstart - Check access for a user to Azure resources - Azure RBAC | Microsoft Docs
+    Docs: [Quickstart - Check access for a user to Azure resources - Azure RBAC | Microsoft Docs](https://docs.microsoft.com/en-us/azure/role-based-access-control/check-access)
  
 ## Implement platform protection (15-20%)
 
