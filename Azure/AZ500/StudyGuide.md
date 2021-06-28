@@ -62,7 +62,7 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
   Docs: [Azure AD Connect: Pass-through Authentication | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta)
   
-  Tutorial [Integrate a single AD forest using pass-through authentication (PTA)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tutorial-passthrough-authentication)
+  Tutorial: [Integrate a single AD forest using pass-through authentication (PTA)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tutorial-passthrough-authentication)
 
   Docs: [Configure an OpenID/OAuth application from the Azure AD app gallery | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/openidoauth-tutorial)
 
@@ -124,58 +124,59 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
 -	create App Registration
 
-  Docs: Create an Azure AD app and service principal in the portal - Microsoft identity platform | Microsoft Docs
+    Docs: Create an Azure AD app and service principal in the portal - Microsoft identity platform | Microsoft Docs
 
-  Docs: Quickstart: Register an app in the Microsoft identity platform | Microsoft Docs
+    Docs: Quickstart: Register an app in the Microsoft identity platform | Microsoft Docs
 
 -	configure App Registration permission scopes
 
-  Docs: Microsoft identity platform scopes, permissions, & consent | Microsoft Docs
+    Docs: Microsoft identity platform scopes, permissions, & consent | Microsoft Docs
 
 -	manage App Registration permission consent
 
-  Docs: Microsoft identity platform scopes, permissions, & consent | Microsoft Docs
+    Docs: Microsoft identity platform scopes, permissions, & consent | Microsoft Docs
 
 -	manage API access to Azure subscriptions and resources
 
-  Docs: Microsoft identity platform authentication flows & app scenarios | Microsoft Docs
+    Docs: Microsoft identity platform authentication flows & app scenarios | Microsoft Docs
 
-  Docs: Assign Azure roles using the REST API - Azure RBAC | Microsoft Docs
+    Docs: Assign Azure roles using the REST API - Azure RBAC | Microsoft Docs
  
 ### Manage access control
 
 -	configure subscription and resource permissions
 
-  Docs: What is Azure role-based access control (Azure RBAC)? | Microsoft Docs
+    Docs: What is Azure role-based access control (Azure RBAC)? | Microsoft Docs
 
-  Docs: Tutorial: Grant a user access to Azure resources using the Azure portal - Azure RBAC | Microsoft Docs
+    Docs: Tutorial: Grant a user access to Azure resources using the Azure portal - Azure RBAC | Microsoft Docs
+
 -	configure resource group permissions
 
-  Docs: Manage resource groups - Azure portal - Azure Resource Manager | Microsoft Docs
+    Docs: Manage resource groups - Azure portal - Azure Resource Manager | Microsoft Docs
 
 -	configure custom RBAC roles
 
-  Docs: Azure custom roles - Azure RBAC | Microsoft Docs
+    Docs: Azure custom roles - Azure RBAC | Microsoft Docs
 
 -	identify the appropriate role
 
-  Docs: Azure identity & access security best practices | Microsoft Docs
+    Docs: Azure identity & access security best practices | Microsoft Docs
 
-  Docs: List Azure role definitions - Azure RBAC | Microsoft Docs
+    Docs: List Azure role definitions - Azure RBAC | Microsoft Docs
 
 -	apply principle of least privilege
 
-  Docs: Azure identity & access security best practices | Microsoft Docs
+    Docs: Azure identity & access security best practices | Microsoft Docs
 
 -	interpret permissions
   
-  Docs: List Azure role assignments using the Azure portal - Azure RBAC | Microsoft Docs
+    Docs: List Azure role assignments using the Azure portal - Azure RBAC | Microsoft Docs
 
-  Docs: Delegate roles by admin task - Azure Active Directory | Microsoft Docs
+    Docs: Delegate roles by admin task - Azure Active Directory | Microsoft Docs
 
 -	check access
 
-  Docs: Quickstart - Check access for a user to Azure resources - Azure RBAC | Microsoft Docs
+    Docs: Quickstart - Check access for a user to Azure resources - Azure RBAC | Microsoft Docs
  
 ## Implement platform protection (15-20%)
 
