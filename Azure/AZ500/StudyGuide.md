@@ -184,65 +184,110 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
 -	secure the connectivity of virtual networks (VPN authentication, Express Route encryption)
 
-  Docs: About Azure VPN Gateway | Microsoft Docs
+    Docs: [About Azure VPN Gateway | Microsoft Docs](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 
-  Docs: Configure Azure AD authentication for User VPN connection: Virtual WAN | Microsoft Docs
+    Docs: [Configure Azure AD authentication for User VPN connection: Virtual WAN | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-azure-ad)
 
-  Docs: Azure ExpressRoute Overview: Connect over a private connection | Microsoft Docs
+    Docs: [Azure ExpressRoute Overview: Connect over a private connection | Microsoft Docs](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
 
-  Docs: Azure ExpressRoute: About Encryption | Microsoft Docs
+    Docs: [Azure ExpressRoute: About Encryption | Microsoft Docs](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-about-encryption)
+
 •	configure Network Security Groups (NSGs) and Application Security Groups (ASGs)
+
 •	create and configure Azure Firewall
+
 •	implement Azure Firewall Manager
+
 •	configure Azure Front Door service as an Application Gateway
+
 •	configure a Web Application Firewall (WAF) on Azure Application Gateway
+
 •	configure Azure Bastion
+
 •	configure a firewall on a storage account, Azure SQL, Key Vault, or App Service
+
 •	implement Service Endpoints
+
 •	implement DDoS protection
  
 ### Configure advanced security for compute
+
 •	configure endpoint protection
+
 •	configure and monitor system updates for VMs
+
 •	configure authentication for Azure Container Registry
+
 •	configure security for different types of containers
+
 o	implement vulnerability management
+
 o	configure isolation for AKS
+
 o	configure security for container registry
+
 •	implement Azure Disk Encryption
+
 · configure authentication and security for Azure App Service
+
 o configure SSL/TLS certs
+
 o configure authentication for Azure Kubernetes Service
+
 o configure automatic updates
 
 ## Manage security operations (25-30%)
 
 ### Monitor security by using Azure Monitor
+
 · create and customize alerts
+
 · monitor security logs by using Azure Monitor
+
 · configure diagnostic logging and log retention
-Monitor security by using Azure Security Center
+
+### Monitor security by using Azure Security Center
+
 · evaluate vulnerability scans from Azure Security Center
+
 · configure Just in Time VM access by using Azure Security Center
+
 · configure centralized policy management by using Azure Security Center
+
 · configure compliance policies and evaluate for compliance by using Azure Security 
 Center
+
 · configure workflow automation by using Azure Security Center
-Monitor security by using Azure Sentinel
+
+### Monitor security by using Azure Sentinel
+
 · create and customize alerts
+
 · configure data sources to Azure Sentinel
+
 · evaluate results from Azure Sentinel
+
 · configure a playbook by using Azure Sentinel
-Configure security policies
+
+### Configure security policies
+
 · configure security settings by using Azure Policy
+
 · configure security settings by using Azure BlueprintSecure data and applications (20-25%)
 Configure security for storage
+
 · configure access control for storage accounts
+
 · configure key management for storage accounts
+
 · configure Azure AD authentication for Azure Storage
+
 · configure Azure AD Domain Services authentication for Azure Files
+
 · create and manage Shared Access Signatures (SAS)
+
 o create a shared access policy for a blob or blob container
+
 · configure Storage Service Encryption
 · configure Azure Defender for Storage
 Configure security for databases
