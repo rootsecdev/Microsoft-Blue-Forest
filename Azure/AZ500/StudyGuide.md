@@ -1,6 +1,6 @@
 # AZ 500 Study Guide
 
-Notes: This is my study guide I've created for the AZ500 exam. All references are direct to Official Microsoft Documents and not third party documention. This is just a disclaimer that this may or may not help you pass the exam. This is just meant to be a study guide. 
+Notes: This is my study guide I've created for the AZ500 exam. All references are direct to Official Microsoft Documents and not third party documention. This is just a disclaimer that this may or may not help you pass the exam.
 
 [Exam AZ-500: Microsoft Azure Security Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500?tab=tab-learning-paths)
 
@@ -26,70 +26,74 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
   Docs: [Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
 
-  Docs: Application and service principal objects in Azure Active Directory
+  Docs: [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals)
 
 - manage Azure AD directory groups
  
-  Docs: Manage app & resource access using groups - Azure AD | Microsoft Docs
+  Docs: [Manage app & resource access using groups - Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-manage-groups)
 
-  Docs: Create a basic group and add members - Azure Active Directory | Microsoft Docs
+  Docs: [Create a basic group and add members - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 - manage Azure AD users
 
-  Docs: Add or delete users - Azure Active Directory | Microsoft Docs
+  Docs: [Add or delete users - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory)
 
-  Docs: Assign or remove licenses - Azure Active Directory | Microsoft Docs
+  Docs: [Assign or remove licenses - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups)
 
 - manage administrative units
 
-  Docs: Administrative units in Azure Active Directory | Microsoft Docs
+  Docs: [Administrative units in Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units)
 
-  Docs: Add and remove administrative units - Azure Active Directory | Microsoft Docs
+  Docs: [Add and remove administrative units - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/roles/admin-units-manage)
   
-  Docs: Working with administrative units | Microsoft Docs
+  Docs: [Working with administrative units | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/azure/active-directory/working-with-administrative-units?view=azureadps-2.0)
 
 - configure password writeback
 
-  Docs: Enable Azure Active Directory password writeback | Microsoft Docs
+  Docs: [Enable Azure Active Directory password writeback | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr-writeback)
 
 - configure authentication methods including password hash and Pass Through Authentication (PTA), OAuth, and passwordless
 
-  Docs: Authentication methods and features - Azure Active Directory | Microsoft Docs
+  Docs: [Authentication methods and features - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
 
-  Docs: Implement password hash synchronization with Azure AD Connect sync | Microsoft Docs
+  Docs: [Implement password hash synchronization with Azure AD Connect sync | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+  
+  Tutorial: [Integrate a single AD forest using password hash sync (PHS)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tutorial-password-hash-sync)
 
-  Docs: Azure AD Connect: Pass-through Authentication | Microsoft Docs
+  Docs: [Azure AD Connect: Pass-through Authentication | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta)
+  
+  Tutorial [Integrate a single AD forest using pass-through authentication (PTA)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tutorial-passthrough-authentication)
 
-  Docs: Configure an OpenID/OAuth application from the Azure AD app gallery | Microsoft Docs
+  Docs: [Configure an OpenID/OAuth application from the Azure AD app gallery | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/openidoauth-tutorial)
 
-  Docs: Azure Active Directory passwordless sign-in | Microsoft Docs
+  Docs: [Azure Active Directory passwordless sign-in | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless)
 
 - transfer Azure subscriptions between Azure AD tenants
 
-  Docs: Add an existing Azure subscription to your tenant - Azure AD | Microsoft Docs
+  Docs: [Add an existing Azure subscription to your tenant - Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 
-  Docs: Transfer billing ownership of an Azure subscription | Microsoft Docs
+  Docs: [Transfer billing ownership of an Azure subscription | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/billing-subscription-transfer)
 
-  Docs: Transfer Azure subscriptions between subscribers and CSPs | Microsoft Docs
+  Docs: [Transfer Azure subscriptions between subscribers and CSPs | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/transfer-subscriptions-subscribers-csp)
  
 
 ### Configure secure access by using Azure AD
 
 -	monitor privileged access for Azure AD Privileged Identity Management (PIM)
 
-  Docs: What is Privileged Identity Management? - Azure AD | Microsoft Docs
+  Docs: [What is Privileged Identity Management? - Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure)
 
-  Docs: Assign Azure AD roles in PIM - Azure Active Directory | Microsoft Docs
+  Docs: [Assign Azure AD roles in PIM - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
 
-  Docs: Deploy Privileged Identity Management (PIM) - Azure AD | Microsoft Docs
+  Docs: [Deploy Privileged Identity Management (PIM) - Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-deployment-plan)
 
 -	configure Access Reviews
 
-  Docs: Resource dashboards for access reviews in PIM - Azure AD | Microsoft Docs
+  Docs: [Resource dashboards for access reviews in PIM - Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-resource-roles-overview-dashboards)
 
-  Docs: Review access to Azure AD roles in PIM - Azure AD | Microsoft Docs
+  Docs: [Review access to Azure AD roles in PIM - Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-perform-security-review)
 
-  Docs: Create an access review of Azure AD roles in PIM - Azure AD | Microsoft Docs
+  Docs: [Create an access review of Azure AD roles in PIM - Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review)
 
 -	configure PIM
 
