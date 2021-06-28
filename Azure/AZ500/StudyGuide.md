@@ -97,21 +97,27 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
 -	configure PIM
 
-  Docs: Activate my Azure AD roles in PIM - Azure Active Directory | Microsoft Docs
+  Docs: [Activate my Azure AD roles in PIM - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new)
 
 - implement Conditional Access policies including Multi-Factor Authentication (MFA)
 
-  Docs: Configure Azure AD Multi-Factor Authentication - Azure Active Directory | Microsoft Docs
+  Docs: [Configure Azure AD Multi-Factor Authentication - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings)
 
-  Docs: Manage authentication methods for Azure AD Multi-Factor Authentication - Azure Active Directory | Microsoft Docs
+  Docs: [Manage authentication methods for Azure AD Multi-Factor Authentication - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-userdevicesettings)
 
-  Docs: Change your two-factor verification method and settings - Azure Active Directory | Microsoft Docs
+  Docs: [Change your two-factor verification method and settings - Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings)
+  
+  Tutorial: [Secure user sign-in events with Azure AD Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa?toc=/azure/active-directory/conditional-access/toc.json&bc=/azure/active-directory/conditional-access/breadcrumb/toc.json)
+  
+  Docs: [What is Conditional Access?](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)
+
+  Docs: [Plan a Conditional Access deployment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)
 
 -	configure Azure AD identity protection
 
-  Docs: What is Azure Active Directory Identity Protection? | Microsoft Docs
-
-  Docs: Configure the MFA registration policy - Azure Active Directory Identity Protection | Microsoft Docs
+  Docs: [What is Azure Active Directory Identity Protection? | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection)
+  
+  Docs: [Configure the MFA registration policy - Azure Active Directory Identity Protection | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
  
 
 ### Manage application access
