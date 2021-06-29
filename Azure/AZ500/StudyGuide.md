@@ -240,15 +240,23 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
     
     Docs: [Set up Azure App Service access restrictions](https://docs.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions)
     
-    Docs; [Locking down an App Service Environment](https://docs.microsoft.com/en-us/azure/app-service/environment/firewall-integration)
+    Docs [Locking down an App Service Environment](https://docs.microsoft.com/en-us/azure/app-service/environment/firewall-integration)
 
-•	implement Service Endpoints
+- implement Service Endpoints
 
-•	implement DDoS protection
- 
+    Docs: [Virtual Network service endpoints](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview)
+
+- implement DDoS protection
+    
+    Docs: [Azure DDoS Protection Standard overview](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
+    
+    Quickstart: [Create and configure Azure DDoS Protection Standard](https://docs.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection)
+
 ### Configure advanced security for compute
 
-•	configure endpoint protection
+- configure endpoint protection
+
+    Docs:
 
 •	configure and monitor system updates for VMs
 
