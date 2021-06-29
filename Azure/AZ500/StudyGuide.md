@@ -203,15 +203,44 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
     Docs: [What is Azure Firewall?](https://docs.microsoft.com/en-us/azure/firewall/overview)
     
     Docs: [Tutorial: Deploy and configure Azure Firewall using the Azure portal](https://docs.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal)
-•	implement Azure Firewall Manager
+	
+- implement Azure Firewall Manager
 
-•	configure Azure Front Door service as an Application Gateway
+    Docs: [What is Azure Firewall Manager?](https://docs.microsoft.com/en-us/azure/firewall-manager/overview)
+    
+    Tutorial: [Secure your virtual hub using Azure Firewall Manager](https://docs.microsoft.com/en-us/azure/firewall-manager/secure-cloud-network)
 
-•	configure a Web Application Firewall (WAF) on Azure Application Gateway
+- configure Azure Front Door service as an Application Gateway
 
-•	configure Azure Bastion
+    Docs: [What is Azure Front Door?](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-overview)
+    
+    Docs: [Quickstart: Create a Front Door for a highly available global web application](https://docs.microsoft.com/en-us/azure/frontdoor/quickstart-create-front-door)
 
-•	configure a firewall on a storage account, Azure SQL, Key Vault, or App Service
+- configure a Web Application Firewall (WAF) on Azure Application Gateway
+    
+    Docs: [What is Azure Web Application Firewall on Azure Application Gateway?](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview?WT.mc_id=thomasmaurer-blog-thmaure)
+    
+    Tutorial: [Create an application gateway with a Web Application Firewall using the Azure portal](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal)
+
+- configure Azure Bastion
+
+    Docs: [What is Azure Bastion?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
+    
+    Quickstart: [Connect to a VM securely through a browser via private IP address](https://docs.microsoft.com/en-us/azure/bastion/quickstart-host-portal)
+    
+    Docs: [Security management in Azure](https://docs.microsoft.com/en-us/azure/security/fundamentals/management)
+
+- configure a firewall on a storage account, Azure SQL, Key Vault, or App Service
+
+    Docs: [Configure Azure Storage firewalls and virtual networks](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal)
+    
+    Docs: [Configure Azure Firewall application rules with SQL FQDNs](https://docs.microsoft.com/en-us/azure/firewall/sql-fqdn-filtering)
+    
+    Docs: [Configure Azure Key Vault firewalls and virtual networks](https://docs.microsoft.com/en-us/azure/key-vault/general/network-security)
+    
+    Docs: [Set up Azure App Service access restrictions](https://docs.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions)
+    
+    Docs; [Locking down an App Service Environment](https://docs.microsoft.com/en-us/azure/app-service/environment/firewall-integration)
 
 •	implement Service Endpoints
 
