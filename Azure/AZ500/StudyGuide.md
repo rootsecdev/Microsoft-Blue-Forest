@@ -192,10 +192,17 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
     Docs: [Azure ExpressRoute: About Encryption | Microsoft Docs](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-about-encryption)
 
-•	configure Network Security Groups (NSGs) and Application Security Groups (ASGs)
+- configure Network Security Groups (NSGs) and Application Security Groups (ASGs)
 
-•	create and configure Azure Firewall
+    Docs: [Create, change, or delete a network security group](https://docs.microsoft.com/en-us/azure/virtual-network/manage-network-security-group)
+    
+    Docs: [Application security groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
+    
+- create and configure Azure Firewall
 
+    Docs: [What is Azure Firewall?](https://docs.microsoft.com/en-us/azure/firewall/overview)
+    
+    Docs: [Tutorial: Deploy and configure Azure Firewall using the Azure portal](https://docs.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal)
 •	implement Azure Firewall Manager
 
 •	configure Azure Front Door service as an Application Gateway
@@ -273,8 +280,11 @@ Center
 
 · configure security settings by using Azure Policy
 
-· configure security settings by using Azure BlueprintSecure data and applications (20-25%)
-Configure security for storage
+· configure security settings by using Azure Blueprint
+
+## Secure data and applications (20-25%)
+
+### Configure security for storage
 
 · configure access control for storage accounts
 
@@ -286,18 +296,20 @@ Configure security for storage
 
 · create and manage Shared Access Signatures (SAS)
 
-o create a shared access policy for a blob or blob container
+- create a shared access policy for a blob or blob container
 
 · configure Storage Service Encryption
 · configure Azure Defender for Storage
-Configure security for databases
+
+### Configure security for databases
 · enable database authentication
 · enable database auditing
 · configure Azure Defender for SQL
 o configure Azure SQL Database Advanced Threat Protection
 · implement database encryption
 o implement Azure SQL Database Always Encrypted
-Configure and manage Key Vault
+
+### Configure and manage Key Vault
 · manage access to Key Vault
 · manage permissions to secrets, certificates, and keys
 o configure RBAC usage in Azure Key Vault
