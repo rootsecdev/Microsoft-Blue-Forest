@@ -262,9 +262,19 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
     
     Docs: [Security best practices for IaaS workloads in Azure](https://docs.microsoft.com/en-us/azure/security/fundamentals/iaas)
 
-•	configure and monitor system updates for VMs
+- configure and monitor system updates for VMs
 
-•	configure authentication for Azure Container Registry
+    Docs: [Manage updates and patches for your VMs](https://docs.microsoft.com/en-us/azure/automation/update-management/manage-updates-for-vm)
+    
+    Docs: [View update assessments in Update Management](https://docs.microsoft.com/en-us/azure/automation/update-management/view-update-assessments)
+    
+    Docs: [How to create alerts for Update Management](https://docs.microsoft.com/en-us/azure/automation/update-management/configure-alerts)
+
+- configure authentication for Azure Container Registry
+
+    Docs: [Authenticate with an Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication?tabs=azure-cli)
+    
+    Docs: [Use an Azure managed identity to authenticate to an Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication-managed-identity)
 
 •	configure security for different types of containers
 
