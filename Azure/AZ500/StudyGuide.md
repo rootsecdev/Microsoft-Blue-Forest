@@ -256,7 +256,11 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
 
 - configure endpoint protection
 
-    Docs:
+    Docs: [Microsoft Antimalware for Azure Cloud Services and Virtual Machines](https://docs.microsoft.com/en-us/azure/security/fundamentals/antimalware)
+    
+    Docs: [Azure Virtual Machines security overview](https://docs.microsoft.com/en-us/azure/security/fundamentals/virtual-machines-overview)
+    
+    Docs: [Security best practices for IaaS workloads in Azure](https://docs.microsoft.com/en-us/azure/security/fundamentals/iaas)
 
 •	configure and monitor system updates for VMs
 
