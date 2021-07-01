@@ -275,12 +275,24 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
     Docs: [Authenticate with an Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication?tabs=azure-cli)
     
     Docs: [Use an Azure managed identity to authenticate to an Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication-managed-identity)
+    
+- configure security for different types of containers
 
-•	configure security for different types of containers
+    Docs: [Container security in Security Center](https://docs.microsoft.com/en-us/azure/security-center/container-security)
+    
+    Docs: [Security considerations for Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-image-security)
+    
+    Docs: [Security concepts for applications and clusters in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/concepts-security)
+    
+- implement vulnerability management
 
-o	implement vulnerability management
+    Docs: [Security Control: Vulnerability Management](https://docs.microsoft.com/en-us/security/benchmark/azure/security-control-vulnerability-management)
 
-o	configure isolation for AKS
+- configure isolation for AKS
+
+    Docs: [Best practices for cluster isolation in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation)
+    
+    Docs: [Secure traffic between pods using network policies in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/use-network-policies)
 
 o	configure security for container registry
 
