@@ -294,13 +294,25 @@ Notes: This is my study guide I've created for the AZ500 exam. All references ar
     
     Docs: [Secure traffic between pods using network policies in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/use-network-policies)
 
-o	configure security for container registry
+- configure security for container registry
 
-•	implement Azure Disk Encryption
+    Docs: [Azure security baseline for Container Registry](https://docs.microsoft.com/en-us/security/benchmark/azure/baselines/container-registry-security-baseline)
+    
+- implement Azure Disk Encryption
 
-· configure authentication and security for Azure App Service
+    Docs: [Azure Disk Encryption for virtual machines and virtual machine scale sets](https://docs.microsoft.com/en-us/azure/security/fundamentals/azure-disk-encryption-vms-vmss)
 
-o configure SSL/TLS certs
+- configure authentication and security for Azure App Service
+
+    Docs: [Azure security baseline for App Service](https://docs.microsoft.com/en-us/security/benchmark/azure/baselines/app-service-security-baseline)
+
+    Docs: [Authentication and authorization in Azure App Service and Azure Functions](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization)
+
+- configure SSL/TLS certs
+
+   Docs: [Add a TLS/SSL certificate in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-certificate)
+   
+   Docs: [Use a TLS/SSL certificate in your code in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-certificate-in-code)
 
 o configure authentication for Azure Kubernetes Service
 
@@ -381,3 +393,9 @@ o configure RBAC usage in Azure Key Vault
 · configure key rotation
 · backup and restore of Key Vault items
 · configure Azure Defender for Key Vault
+
+
+## Azure Extras
+Notes: These sit outside of the scope of exam but may be useful for security strategies around different azure workloads.
+
+[Security baselines for Azure](https://docs.microsoft.com/en-us/security/benchmark/azure/security-baselines-overview)
