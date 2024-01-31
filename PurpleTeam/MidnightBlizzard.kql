@@ -1,0 +1,24 @@
+AuditLogs
+| where Category =~ "ApplicationManagement"
+| where ActivityDisplayName has_any ("Add delegated permission grant","Add app role assignment to service principal")
+| where Result =~ "success"
+| where tostring(InitiatedBy.user.userPrincipalName) has "@" or tostring(InitiatedBy.app.displayName) has "@"
+| extend props = parse_json(tostring(TargetResources[0].modifiedProperties))
+| mv-expand props
+| extend UserAgent = tostring(AdditionalDetails[0].value)
+| extend InitiatingUser = tostring(parse_json(tostring(InitiatedBy.user)).userPrincipalName)
+| extend UserIPAddress = tostring(parse_json(tostring(InitiatedBy.user)).ipAddress)
+| extend DisplayName = tostring(props.displayName)
+| extend Permissions = tostring(parse_json(tostring(props.newValue)))
+| where Permissions has_any ("full_access_as_app")
+| extend PermissionsAddedTo = tostring(TargetResources[0].displayName)
+| extend Type = tostring(TargetResources[0].type)
+| project-away props
+| join kind=leftouter(
+  AuditLogs
+  | where ActivityDisplayName has "Consent to application"
+  | extend AppName = tostring(TargetResources[0].displayName)
+  | extend AppId = tostring(TargetResources[0].id)
+  | project AppName, AppId, CorrelationId) on CorrelationId
+| project-reorder TimeGenerated, OperationName, InitiatingUser, UserIPAddress, UserAgent, PermissionsAddedTo, Permissions, AppName, AppId, CorrelationId
+| extend timestamp = TimeGenerated, AccountCustomEntity = InitiatingUser, IPCustomEntity = UserIPAddress
