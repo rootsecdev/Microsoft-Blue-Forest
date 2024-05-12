@@ -14,6 +14,8 @@
 
 [Threat Hunter Playbook](https://github.com/OTRF/ThreatHunter-Playbook)
 
+[Hunting in Azure subscriptions](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/hunting-in-azure-subscriptions/ba-p/4125875)
+
 
 **SANS Slingshot Info**
 
@@ -22,3 +24,5 @@
 [The C2 Matrix](https://www.thec2matrix.com/)
 
 [C2 Matrix Documentation](https://howto.thec2matrix.com/)
+
+
