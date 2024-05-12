@@ -2,7 +2,9 @@
 
 **Other Methodology Frameworks**
 
-[Mitre Att&CK](https://attack.mitre.org/)
+[Mitre ATT&CK](https://attack.mitre.org/)
+
+[Mitre ATT&CK Cloud] (https://attack.mitre.org/matrices/enterprise/cloud/)
 
 **Training Resources from PTEF**
 
@@ -15,6 +17,10 @@
 [Threat Hunter Playbook](https://github.com/OTRF/ThreatHunter-Playbook)
 
 [Hunting in Azure subscriptions](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/hunting-in-azure-subscriptions/ba-p/4125875)
+
+[Token Theft Playbook](https://learn.microsoft.com/en-us/security/operations/token-theft-playbook)
+
+[Microsoft Incident Response lessons on preventing cloud identity compromise](https://www.microsoft.com/en-us/security/blog/2023/12/05/microsoft-incident-response-lessons-on-preventing-cloud-identity-compromise/)
 
 
 **SANS Slingshot Info**
