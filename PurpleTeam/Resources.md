@@ -4,7 +4,7 @@
 
 [Mitre ATT&CK](https://attack.mitre.org/)
 
-[Mitre ATT&CK Cloud] (https://attack.mitre.org/matrices/enterprise/cloud/)
+[Mitre ATT&CK Cloud](https://attack.mitre.org/matrices/enterprise/cloud/)
 
 **Training Resources from PTEF**
 
