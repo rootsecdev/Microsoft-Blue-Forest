@@ -1,0 +1,23 @@
+// This is a re-written detection from the Role Assignments Alert documentation: https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-alert
+// AzureActivity fields has been updated and changed. Added a few extra columns that are meaningful for the detection
+// Caller is the object id. You will have to look it up.
+// This also will detect subscription elevations from a managed identity. 
+
+AzureActivity
+| where CategoryValue =~ "Administrative" and
+    OperationNameValue =~ "Microsoft.Authorization/roleAssignments/write" and
+    (ActivityStatusValue =~ "Start" or ActivityStatus =~ "Started")
+| extend Properties_d = todynamic(Properties)
+| extend roleDefinitionId = extractjson("$.properties.roleDefinitionId",tostring(Properties_d.requestbody),typeof(string))
+| extend principalId = extractjson("$.properties.principalId",tostring(Properties_d.requestbody),typeof(string))
+//| extend PrincipalType = extractjson("$.Properties.PrincipalType",tostring(Properties_d.requestbody),typeof(string))
+//| extend Scope = extractjson("$.Properties.Scope",tostring(Properties_d.requestbody),typeof(string))
+//| where Scope !contains "resourcegroups"
+| extend RoleId = split(roleDefinitionId,'/')[-1]
+| extend RoleDisplayName = case(
+    RoleId =~ 'b24988ac-6180-42a0-ab88-20f7382dd24c', "Contributor",
+    RoleId =~ '8e3af657-a8ff-443c-a75c-2fe8c4bcb635', "Owner",
+    RoleId =~ '18d7d88d-d35e-4fb5-a5c3-7773c20a72d9', "User Access Administrator",
+    "Irrelevant")
+| where RoleDisplayName != "Irrelevant"
+| project TimeGenerated,SubscriptionId,principalId,RoleId,RoleDisplayName,Caller,CallerIpAddress
