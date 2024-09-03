@@ -1,0 +1,7 @@
+//Custom hunting query for a honey pot account. Gather a generic username from a wordlist
+//Example Wordlist: https://github.com/insidetrust/statistically-likely-usernames
+//Choose a user name that fits your naming convention for a user 
+SigninLogs
+| where AlternateSignInName == "example@upndomain.local"
+| where ResultType == "50126"
+| project TimeGenerated, Identity, ResultDescription, AppDisplayName, IPAddress, LocationDetails.city, LocationDetails.countryOrRegion
