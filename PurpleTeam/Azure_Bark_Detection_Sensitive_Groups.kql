@@ -1,0 +1,10 @@
+//This detection is good for monitoring sensitive group privileges that may have been exploited using Bloodhound Attack Research Toolkit
+//Replace your target resource id below with the Group ID that you want monitored
+//It's possible you may need to do multiple hunt queries if you have more than one sensitive group
+
+AuditLogs
+| where Category == "GroupManagement"
+| where OperationName == "Add member to group"
+| where AdditionalDetails[0].value contains "WindowsPowerShell"
+| where TargetResources[1].id == "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+| project OperationName,Identity,TargetResources[0].userPrincipalName
