@@ -1,0 +1,2 @@
+## Blocking Powershell in Azure ##
+
